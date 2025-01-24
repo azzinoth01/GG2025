@@ -24,7 +24,7 @@ public class Player : MonoBehaviour, PlayerAction.IPlayerInputActions
         Vector2 mousePosition = context.ReadValue<Vector2>();
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
 
-        Debug.Log(mousePosition);
+        //Debug.Log(mousePosition);
         Vector2 playerPosition = transform.position;
         _aimDirection = (mousePosition - playerPosition).normalized;
 
