@@ -800,6 +800,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6657344141954821257, guid: cea739e9fc0c6ac42a4d14b661cdc858, type: 3}
+      propertyPath: _moveForce
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 6657344141954821257, guid: cea739e9fc0c6ac42a4d14b661cdc858, type: 3}
       propertyPath: _shootForce
       value: 200
       objectReference: {fileID: 0}
