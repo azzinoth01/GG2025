@@ -9,6 +9,8 @@ public class Player : MonoBehaviour, PlayerAction.IPlayerInputActions
 
     [SerializeField] private float _shootForce;
 
+    [SerializeField] private GameObject _aimPiviot;
+
     private Vector2 _aimDirection;
 
     private Rigidbody2D _body;
@@ -24,11 +26,14 @@ public class Player : MonoBehaviour, PlayerAction.IPlayerInputActions
 
         Debug.Log(mousePosition);
         Vector2 playerPosition = transform.position;
-        _aimDirection = -1 * (mousePosition - playerPosition).normalized;
+        _aimDirection = (mousePosition - playerPosition).normalized;
+
+        float aimAngle = Vector2.SignedAngle(Vector2.right, _aimDirection);
+        _aimPiviot.transform.transform.localEulerAngles = new Vector3(0, 0, aimAngle);
     }
 
     public void OnShoot(InputAction.CallbackContext context) {
-        _body.AddForce(_shootForce * _aimDirection);
+        _body.AddForce(-1 * _shootForce * _aimDirection);
     }
 
 
