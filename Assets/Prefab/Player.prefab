@@ -199,6 +199,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxAmmo: 100
   depleteAmount: 5
+  rechargeAmount: 5
+  rechargeDelay: 2
 --- !u!1 &5132736172815880768
 GameObject:
   m_ObjectHideFlags: 0
