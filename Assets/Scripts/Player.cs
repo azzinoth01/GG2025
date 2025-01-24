@@ -33,7 +33,7 @@ public class Player : MonoBehaviour, PlayerAction.IPlayerInputActions
     public void OnShoot(InputAction.CallbackContext context) {
         if (context.started) {
             if (_ammoControl.CanShoot()) {
-                _body.AddForce(_shootForce * _aimDirection);
+                _body.AddForce(-1 * _shootForce * _aimDirection);
                 _ammoControl.DepleteAmmo();
                 _weapon.ShootProjectile();
             }
