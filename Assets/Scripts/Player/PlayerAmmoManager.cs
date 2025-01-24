@@ -8,6 +8,10 @@ public class PlayerAmmoManager : MonoBehaviour
     [SerializeField] private float depleteAmount;
     [SerializeField] private float rechargeAmount;
     [SerializeField] private float rechargeDelay;
+    public event EventHandler<OnAmmoChangedEventArgs> OnAmmoChanged;
+    public class OnAmmoChangedEventArgs : EventArgs {
+        public float ammo;
+    }
 
     private float currentAmmo;
     private float currentTime;
@@ -22,11 +26,13 @@ public class PlayerAmmoManager : MonoBehaviour
     public void DepleteAmmo(){
         currentAmmo -= depleteAmount;
         Debug.Log("Ammo left: " + currentAmmo);
+        OnAmmoChanged?.Invoke(this, new OnAmmoChangedEventArgs{ ammo = currentAmmo / maxAmmo });
         currentTime = 0.0f;
     }
     public void AddAmmo(float toAdd){
         currentAmmo += toAdd;
         Debug.Log("Ammo left: " + currentAmmo);
+        OnAmmoChanged?.Invoke(this, new OnAmmoChangedEventArgs{ ammo = currentAmmo / maxAmmo });
         currentTime = 0.0f;
     }
     private void Update(){
