@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6946522065256646165}
   - component: {fileID: 2466018115109723159}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7553243209487510511}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ProjectileSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6144685377837928760}
   - component: {fileID: 1414624540046721212}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AimArrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
