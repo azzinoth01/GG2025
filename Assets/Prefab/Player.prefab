@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6657344141954821257}
   - component: {fileID: 6675982520661273872}
   - component: {fileID: 2763051558051070036}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ac33ea4aeab4344b8ddb63c7986bc99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveForce: 100
+  _moveForce: 300
   _maxMoveSpeed: 10
   _shootForce: 200
   _weapon: {fileID: 740112308241004067}
@@ -215,7 +215,7 @@ GameObject:
   - component: {fileID: 6315202785821453535}
   - component: {fileID: 7352522835157540821}
   - component: {fileID: 5155484058322402901}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -351,6 +351,18 @@ PrefabInstance:
     - target: {fileID: 302849292442607885, guid: 7b2fc06a84c9e1d4b9106934982ec0f1, type: 3}
       propertyPath: m_Name
       value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 302849292442607885, guid: 7b2fc06a84c9e1d4b9106934982ec0f1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1193182636465824667, guid: 7b2fc06a84c9e1d4b9106934982ec0f1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5535140147588160413, guid: 7b2fc06a84c9e1d4b9106934982ec0f1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6946522065256646165, guid: 7b2fc06a84c9e1d4b9106934982ec0f1, type: 3}
       propertyPath: m_LocalPosition.x

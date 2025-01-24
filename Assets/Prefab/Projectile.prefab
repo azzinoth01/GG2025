@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 375941498103160998}
   - component: {fileID: 2579740429416364517}
   - component: {fileID: 2160391189816394270}
-  m_Layer: 0
+  - component: {fileID: 5719317995152296402}
+  m_Layer: 8
   m_Name: Projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,3 +167,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5719317995152296402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6637970115944636142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30e436fba4a9fe64b9b6d42ceb59a1ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _createPlatfromOnCollisonWith:
+    serializedVersion: 2
+    m_Bits: 512
+  _bublePlatformPrefab: {fileID: 676361124687917582, guid: 9d3e90ed69cf3484488f1b4fe9886280, type: 3}
