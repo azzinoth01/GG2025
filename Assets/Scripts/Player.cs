@@ -9,7 +9,7 @@ public class Player : MonoBehaviour, PlayerAction.IPlayerInputActions
 
     [SerializeField] private float _shootForce;
 
-    [SerializeField] private GameObject _aimPiviot;
+    [SerializeField] private Weapon _weapon;
 
     private Vector2 _aimDirection;
 
@@ -23,17 +23,15 @@ public class Player : MonoBehaviour, PlayerAction.IPlayerInputActions
     public void OnAim(InputAction.CallbackContext context) {
         Vector2 mousePosition = context.ReadValue<Vector2>();
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-
-        Debug.Log(mousePosition);
         Vector2 playerPosition = transform.position;
         _aimDirection = (mousePosition - playerPosition).normalized;
 
-        float aimAngle = Vector2.SignedAngle(Vector2.right, _aimDirection);
-        _aimPiviot.transform.transform.localEulerAngles = new Vector3(0, 0, aimAngle);
+        _weapon.SetAim(_aimDirection);
     }
 
     public void OnShoot(InputAction.CallbackContext context) {
         _body.AddForce(-1 * _shootForce * _aimDirection);
+        _weapon.ShootProjectile();
     }
 
 
