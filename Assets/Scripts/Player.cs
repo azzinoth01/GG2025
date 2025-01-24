@@ -7,6 +7,10 @@ public class Player : MonoBehaviour, PlayerAction.IPlayerInputActions
     [SerializeField] private float _moveForce;
     [SerializeField] private float _maxMoveSpeed;
 
+    [SerializeField] private float _shootForce;
+
+    private Vector2 _aimDirection;
+
     private Rigidbody2D _body;
 
     private PlayerAction _inputControl;
@@ -14,6 +18,19 @@ public class Player : MonoBehaviour, PlayerAction.IPlayerInputActions
     public void OnMove(InputAction.CallbackContext context) {
         _moveDirection = context.ReadValue<Vector2>();
     }
+    public void OnAim(InputAction.CallbackContext context) {
+        Vector2 mousePosition = context.ReadValue<Vector2>();
+        mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+
+        Debug.Log(mousePosition);
+        Vector2 playerPosition = transform.position;
+        _aimDirection = -1 * (mousePosition - playerPosition).normalized;
+    }
+
+    public void OnShoot(InputAction.CallbackContext context) {
+        _body.AddForce(_shootForce * _aimDirection);
+    }
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start() {
@@ -40,4 +57,6 @@ public class Player : MonoBehaviour, PlayerAction.IPlayerInputActions
             _inputControl = null;
         }
     }
+
+
 }
