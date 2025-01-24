@@ -9,6 +9,8 @@ public class Player : MonoBehaviour, PlayerAction.IPlayerInputActions
 
     [SerializeField] private float _shootForce;
 
+    [SerializeField] private Weapon _weapon;
+
     private Vector2 _aimDirection;
 
     private Rigidbody2D _body;
@@ -22,19 +24,22 @@ public class Player : MonoBehaviour, PlayerAction.IPlayerInputActions
     public void OnAim(InputAction.CallbackContext context) {
         Vector2 mousePosition = context.ReadValue<Vector2>();
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-
-        //Debug.Log(mousePosition);
         Vector2 playerPosition = transform.position;
-        _aimDirection = -1 * (mousePosition - playerPosition).normalized;
+        _aimDirection = (mousePosition - playerPosition).normalized;
+
+        _weapon.SetAim(_aimDirection);
     }
 
     public void OnShoot(InputAction.CallbackContext context) {
-        if(context.started){
-            if(_ammoControl.CanShoot()){
+        if (context.started) {
+            if (_ammoControl.CanShoot()) {
                 _body.AddForce(_shootForce * _aimDirection);
                 _ammoControl.DepleteAmmo();
+                _weapon.ShootProjectile();
             }
         }
+
+
     }
 
 
