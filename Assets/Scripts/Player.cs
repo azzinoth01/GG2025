@@ -14,6 +14,7 @@ public class Player : MonoBehaviour, PlayerAction.IPlayerInputActions
     private Rigidbody2D _body;
 
     private PlayerAction _inputControl;
+    private PlayerAmmoManager _ammoControl;
 
     public void OnMove(InputAction.CallbackContext context) {
         _moveDirection = context.ReadValue<Vector2>();
@@ -28,7 +29,12 @@ public class Player : MonoBehaviour, PlayerAction.IPlayerInputActions
     }
 
     public void OnShoot(InputAction.CallbackContext context) {
-        _body.AddForce(_shootForce * _aimDirection);
+        if(context.started){
+            if(_ammoControl.CanShoot()){
+                _body.AddForce(_shootForce * _aimDirection);
+                _ammoControl.DepleteAmmo();
+            }
+        }
     }
 
 
@@ -40,6 +46,7 @@ public class Player : MonoBehaviour, PlayerAction.IPlayerInputActions
             _inputControl.PlayerInput.SetCallbacks(this);
         }
         _body = GetComponent<Rigidbody2D>();
+        _ammoControl = GetComponent<PlayerAmmoManager>();
     }
 
     // Update is called once per frame
