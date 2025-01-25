@@ -12,6 +12,7 @@ public class PlayerHealthManager : MonoBehaviour, IHealthInterface
     public event EventHandler<OnHealthChangedEventArgs> OnHealthChanged;
     public class OnHealthChangedEventArgs : EventArgs {
         public float health;
+        public bool isDamage;
     }
 
     public event EventHandler<OnSetIlvunerableEventArgs> SetIlvunerable;
@@ -29,13 +30,13 @@ public class PlayerHealthManager : MonoBehaviour, IHealthInterface
     }
     public void AddHealth(float amount){
         playerHealth = Mathf.Clamp(playerHealth + amount, 0, playerHealthMax);
-        OnHealthChanged?.Invoke(this, new OnHealthChangedEventArgs{ health = playerHealth / playerHealthMax });
+        OnHealthChanged?.Invoke(this, new OnHealthChangedEventArgs{ health = playerHealth / playerHealthMax, isDamage = false });
     }
 
     public void UpdateHealth(float amount){
         if(amount > 0 && currentHealthState != HealthState.Invulnerable){
             playerHealth -= amount;
-            OnHealthChanged?.Invoke(this, new OnHealthChangedEventArgs{ health = playerHealth / playerHealthMax });
+            OnHealthChanged?.Invoke(this, new OnHealthChangedEventArgs{ health = playerHealth / playerHealthMax, isDamage = true });
             CameraShake.Instance.shakeDuration = 0.5f;
             currentHealthState = HealthState.Invulnerable;
 
@@ -68,5 +69,8 @@ public class PlayerHealthManager : MonoBehaviour, IHealthInterface
                 KillActor();
                 break;
         }
+    }
+    public bool IsInvulnerable(){
+        return currentHealthState == HealthState.Invulnerable;
     }
 }
