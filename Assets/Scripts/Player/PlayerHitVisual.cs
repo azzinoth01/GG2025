@@ -9,6 +9,8 @@ public class PlayerHitVisual : MonoBehaviour
     private PlayerHealthManager playerHealthManager;
 
     private float flashDelay = 0f;
+    private float flashAmount = 3f;
+    private float flashCounter;
 
     void Start(){
         sprites = GetComponentsInChildren<SpriteRenderer>();
@@ -20,6 +22,10 @@ public class PlayerHitVisual : MonoBehaviour
     private void OnHealthChanged(object sender, PlayerHealthManager.OnHealthChangedEventArgs e)
     {
         if(e.isDamage){
+            if(flashCounter != 0f){
+                StopCoroutine(TakeDamageFlash());
+                flashCounter = 0f;
+            }
             StartCoroutine(TakeDamageFlash());
         }
     }
@@ -29,8 +35,13 @@ public class PlayerHitVisual : MonoBehaviour
         }
     }
     private IEnumerator TakeDamageFlash(){
-        SetHitBool(1);
-        yield return new WaitForSeconds(0.1f);
-        SetHitBool(0);
+        while(flashCounter <= flashAmount){
+            SetHitBool(1);
+            yield return new WaitForSeconds(0.125f);
+            SetHitBool(0);
+            flashCounter++;
+            yield return new WaitForSeconds(0.25f);
+        }
+        flashCounter = 0f;
     }
 }
