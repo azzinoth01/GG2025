@@ -27,6 +27,10 @@ public class PlayerHealthManager : MonoBehaviour, IHealthInterface
     public void KillActor(){
         OnPlayerDied?.Invoke();
     }
+    public void AddHealth(float amount){
+        playerHealth = Mathf.Clamp(playerHealth + amount, 0, playerHealthMax);
+        OnHealthChanged?.Invoke(this, new OnHealthChangedEventArgs{ health = playerHealth / playerHealthMax });
+    }
 
     public void UpdateHealth(float amount){
         if(amount > 0 && currentHealthState != HealthState.Invulnerable){

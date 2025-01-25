@@ -35,6 +35,7 @@ public class Player : MonoBehaviour, PlayerAction.IPlayerInputActions
     public void OnShoot(InputAction.CallbackContext context) {
         if (context.started && !GameManager.Instance.IsGamePaused()) {
             if (_ammoControl.CanShoot()) {
+                Debug.Log(_ammoControl.GetAmmoAmount());
                 _body.AddForce(-1 * _shootForce * _aimDirection);
                 _ammoControl.DepleteAmmo();
                 _weapon.ShootProjectile();

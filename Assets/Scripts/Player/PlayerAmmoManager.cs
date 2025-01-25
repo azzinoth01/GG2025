@@ -30,10 +30,12 @@ public class PlayerAmmoManager : MonoBehaviour
         currentTime = 0.0f;
     }
     public void AddAmmo(float toAdd){
-        currentAmmo += toAdd;
-        Debug.Log("Ammo left: " + currentAmmo);
-        OnAmmoChanged?.Invoke(this, new OnAmmoChangedEventArgs{ ammo = currentAmmo / maxAmmo });
-        currentTime = 0.0f;
+        if(currentAmmo < maxAmmo){
+            currentAmmo += toAdd;
+            currentAmmo = Mathf.Clamp(currentAmmo, 0, maxAmmo);
+            OnAmmoChanged?.Invoke(this, new OnAmmoChangedEventArgs{ ammo = currentAmmo / maxAmmo });
+            currentTime = 0.0f;
+        }
     }
     private void Update(){
         if(currentAmmo != maxAmmo){
@@ -42,5 +44,8 @@ public class PlayerAmmoManager : MonoBehaviour
                 AddAmmo(rechargeAmount);
             }
         }
+    }
+    public float GetAmmoAmount(){
+        return currentAmmo;
     }
 }
