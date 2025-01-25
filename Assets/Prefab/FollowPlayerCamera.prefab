@@ -147,6 +147,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6853442110439784421}
   - component: {fileID: 1791435337280692109}
+  - component: {fileID: 6154672022130579844}
   m_Layer: 11
   m_Name: FollowPlayerCamera
   m_TagString: Untagged
@@ -186,3 +187,19 @@ MonoBehaviour:
   _followSpeed: 100
   _maxXPosition: 5
   _minXPosition: -5
+--- !u!114 &6154672022130579844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3241645920223550158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26cf216ddb378b5408d8791a7d46642c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camTransform: {fileID: 611163208526721478}
+  shakeDuration: 0
+  shakeAmount: 0.075
+  decreaseFactor: 1
