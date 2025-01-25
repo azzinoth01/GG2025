@@ -168,6 +168,8 @@ MonoBehaviour:
   _projectileSpawnPoint: {fileID: 1103783221682766110}
   _projectilePrefab: {fileID: 1973142594064277638, guid: 7ff1644afbf29874e81a8bf72d46b5c2, type: 3}
   _delayBetweenShootsInSeconds: 1
+  _shootSound: {fileID: 8300000, guid: 670710f496c059d4ba08b3fcab6dd7a6, type: 3}
+  _shootVolume: 1
 --- !u!1 &2614910427865257552
 GameObject:
   m_ObjectHideFlags: 0
