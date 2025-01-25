@@ -7,6 +7,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] private Projectile _projectilePrefab;
 
     [SerializeField] private AudioClip _shootSound;
+    [SerializeField] private float _shootVolume;
     private Vector2 _aimDirection;
 
     public void ShootProjectile() {
@@ -17,7 +18,7 @@ public class Weapon : MonoBehaviour
 
         float linearVolume = Mathf.Pow(10, sfxVolume / 20);
 
-        AudioSource.PlayClipAtPoint(_shootSound, _projectileSpawnPoint.transform.position, linearVolume);
+        AudioSource.PlayClipAtPoint(_shootSound, _projectileSpawnPoint.transform.position, linearVolume * _shootVolume);
 
     }
 

@@ -183,3 +183,5 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   _bublePlatformPrefab: {fileID: 676361124687917582, guid: 9d3e90ed69cf3484488f1b4fe9886280, type: 3}
+  _createBubblePlatformSound: {fileID: 8300000, guid: 91e5268dbc4dc164298d0ec176a0f495, type: 3}
+  _createBubblePlatformVolume: 1
