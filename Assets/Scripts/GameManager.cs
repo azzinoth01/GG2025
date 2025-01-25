@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
         playerHealthManager = player.GetComponent<PlayerHealthManager>();
         playerHealthManager.OnPlayerDied += OnPlayerDied;
         isGamePaused = false;
+        Time.timeScale = 1.0f;
     }
     public void OnPlayerDied()
     {
