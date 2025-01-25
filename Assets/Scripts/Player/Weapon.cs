@@ -11,7 +11,7 @@ public class Weapon : MonoBehaviour
 
     public void ShootProjectile() {
         Projectile projectile = Instantiate(_projectilePrefab, _projectileSpawnPoint.transform.position, Quaternion.identity);
-        Instantiate(_projectileVFX, _projectileSpawnPoint.transform.position, Quaternion.identity);
+        Instantiate(_projectileVFX, _projectileSpawnPoint.transform.position, transform.rotation);
         projectile.MoveDirection = _aimDirection;
     }
 

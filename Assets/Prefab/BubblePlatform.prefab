@@ -169,7 +169,7 @@ MonoBehaviour:
   _popBubbleCollideWith:
     serializedVersion: 2
     m_Bits: 704
-  _forceOnPop: 1000
+  _forceOnPop: 2000
 --- !u!114 &5656916177110115634
 MonoBehaviour:
   m_ObjectHideFlags: 0
