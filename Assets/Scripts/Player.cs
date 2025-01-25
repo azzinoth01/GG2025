@@ -64,11 +64,9 @@ public class Player : MonoBehaviour, PlayerAction.IPlayerInputActions
     }
 
     private void OnDestroy() {
-        if (_inputControl != null) {
+        //if (_inputControl != null) {
             _inputControl.Dispose();
             _inputControl = null;
-        }
+        //}
     }
-
-
 }
