@@ -4,7 +4,7 @@ public class BaseObstacle : MonoBehaviour
 {
     [SerializeField] private float baseDamage;
     [SerializeField] private AudioClip _dmgSound;
-    [SerializeField] private AudioClip _dmgVolume;
+    [SerializeField] private float _dmgVolume;
 
     void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.TryGetComponent(out IHealthInterface collisionObject)) {
