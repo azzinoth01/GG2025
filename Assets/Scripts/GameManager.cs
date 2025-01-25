@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
 
     public void OnPlayerDied()
     {
+        Destroy(player.gameObject);
         deathScreen.SetActive(true);
     }
 
