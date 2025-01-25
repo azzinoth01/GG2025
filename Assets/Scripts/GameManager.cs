@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -8,8 +9,9 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private Player player;
     [SerializeField] private GameObject deathScreen;
+    [SerializeField] private GameObject pauseScreen;
     private PlayerHealthManager playerHealthManager;
-
+    private bool isGamePaused;
     private void Awake(){
     if(Instance != null && Instance != this){
             Destroy(this);
@@ -20,6 +22,7 @@ public class GameManager : MonoBehaviour
     void Start(){
         playerHealthManager = player.GetComponent<PlayerHealthManager>();
         playerHealthManager.OnPlayerDied += OnPlayerDied;
+        isGamePaused = false;
     }
     public void OnPlayerDied()
     {
@@ -29,5 +32,19 @@ public class GameManager : MonoBehaviour
 
     public void RestartGame(){
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void ToggleGamePaused(){
+        isGamePaused = !isGamePaused;
+        pauseScreen.gameObject.SetActive(isGamePaused);
+        if(isGamePaused){
+            Time.timeScale = 0.0f;
+        } else {
+            Time.timeScale = 1.0f;
+        }
+    }
+
+    public bool IsGamePaused(){
+        return isGamePaused;
     }
 }

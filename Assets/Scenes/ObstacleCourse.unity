@@ -7964,14 +7964,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7887836082158506624, guid: 057dcc3d4b13e55498503b33b7e453c1, type: 3}
+    - target: {fileID: 5514746066346460429, guid: 057dcc3d4b13e55498503b33b7e453c1, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234008673490141503, guid: 057dcc3d4b13e55498503b33b7e453c1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234008673490141503, guid: 057dcc3d4b13e55498503b33b7e453c1, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234008673490141503, guid: 057dcc3d4b13e55498503b33b7e453c1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 8538680402854480070, guid: 057dcc3d4b13e55498503b33b7e453c1, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 136977457}
+    - target: {fileID: 8965122790569706667, guid: 057dcc3d4b13e55498503b33b7e453c1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965122790569706667, guid: 057dcc3d4b13e55498503b33b7e453c1, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965122790569706667, guid: 057dcc3d4b13e55498503b33b7e453c1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965122790569706667, guid: 057dcc3d4b13e55498503b33b7e453c1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -137.5
+      objectReference: {fileID: 0}
     - target: {fileID: 9204768993510951888, guid: 057dcc3d4b13e55498503b33b7e453c1, type: 3}
       propertyPath: player
       value: 
@@ -10167,6 +10195,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1283503887 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5514746066346460429, guid: 057dcc3d4b13e55498503b33b7e453c1, type: 3}
+  m_PrefabInstance: {fileID: 853628697}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1293950639 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8662406764442951343, guid: 978ef8c3da840ea4daf4da308f7fd86b, type: 3}
@@ -11542,6 +11575,10 @@ PrefabInstance:
       propertyPath: deathScreen
       value: 
       objectReference: {fileID: 496396687}
+    - target: {fileID: 7498417951289865584, guid: e7c2253d5eef9514aba13e6351c7e484, type: 3}
+      propertyPath: pauseScreen
+      value: 
+      objectReference: {fileID: 1283503887}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -22,26 +22,31 @@ public class Player : MonoBehaviour, PlayerAction.IPlayerInputActions
         _moveDirection = context.ReadValue<Vector2>();
     }
     public void OnAim(InputAction.CallbackContext context) {
-        Vector2 mousePosition = context.ReadValue<Vector2>();
-        mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-        Vector2 playerPosition = transform.position;
-        _aimDirection = (mousePosition - playerPosition).normalized;
+        if(!GameManager.Instance.IsGamePaused()){
+            Vector2 mousePosition = context.ReadValue<Vector2>();
+            mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+            Vector2 playerPosition = transform.position;
+            _aimDirection = (mousePosition - playerPosition).normalized;
 
-        _weapon.SetAim(_aimDirection);
+            _weapon.SetAim(_aimDirection);
+        }
     }
 
     public void OnShoot(InputAction.CallbackContext context) {
-        if (context.started) {
+        if (context.started && !GameManager.Instance.IsGamePaused()) {
             if (_ammoControl.CanShoot()) {
                 _body.AddForce(-1 * _shootForce * _aimDirection);
                 _ammoControl.DepleteAmmo();
                 _weapon.ShootProjectile();
             }
         }
-
-
     }
 
+    public void OnPause(InputAction.CallbackContext context){
+        if (context.started){
+            GameManager.Instance.ToggleGamePaused();
+        }
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start() {
@@ -56,11 +61,10 @@ public class Player : MonoBehaviour, PlayerAction.IPlayerInputActions
 
     // Update is called once per frame
     void Update() {
-
-        _body.AddForce(_moveForce * _moveDirection * Time.deltaTime);
-
-        _body.linearVelocity = _body.linearVelocity.normalized * Mathf.Clamp(_body.linearVelocity.magnitude, 0, _maxMoveSpeed);
-
+        if(!GameManager.Instance.IsGamePaused()){
+            _body.AddForce(_moveForce * _moveDirection * Time.deltaTime);
+            _body.linearVelocity = _body.linearVelocity.normalized * Mathf.Clamp(_body.linearVelocity.magnitude, 0, _maxMoveSpeed);
+        }
     }
 
     private void OnDisable() {
