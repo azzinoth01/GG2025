@@ -22,9 +22,12 @@ public class PlayerHealthManager : MonoBehaviour, IHealthInterface
     private enum HealthState {Alive, Invulnerable, Dead};
     private HealthState currentHealthState;
 
+    private Rigidbody2D playerRB;
+
     public void KillActor(){
         OnPlayerDied?.Invoke();
     }
+
     public void UpdateHealth(float amount){
         if(amount > 0 && currentHealthState != HealthState.Invulnerable){
             playerHealth -= amount;
@@ -38,6 +41,7 @@ public class PlayerHealthManager : MonoBehaviour, IHealthInterface
         }
     }
     void Start(){
+        playerRB = GetComponent<Rigidbody2D>();
         playerHealth = playerHealthMax;
         currentHealthState = HealthState.Alive;
     }
