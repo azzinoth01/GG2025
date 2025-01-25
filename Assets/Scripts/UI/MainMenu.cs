@@ -11,7 +11,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private Button ExitButton;
     [SerializeField] private GameObject AboutScreen;
 
-    private string GAME_SCENE = "ObstacleCourse";
+    private string GAME_SCENE = "Levels";
 
     void Start(){
         PlayButton.onClick.AddListener(StartGame);
