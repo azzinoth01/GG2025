@@ -12,30 +12,30 @@ public class CameraFollow : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
+        if(_followObject){
+            Vector2 direction = _followObject.transform.position - transform.position;
+            Vector3 move = direction.normalized * _followSpeed * Time.deltaTime;
 
-        Vector2 direction = _followObject.transform.position - transform.position;
-        Vector3 move = direction.normalized * _followSpeed * Time.deltaTime;
+            if (Mathf.Abs(move.y) > Mathf.Abs(direction.y)) {
+                move.y = direction.y;
+            }
+            if (Mathf.Abs(move.x) > Mathf.Abs(direction.x)) {
+                move.x = direction.x;
+            }
 
-        if (Mathf.Abs(move.y) > Mathf.Abs(direction.y)) {
-            move.y = direction.y;
+
+            transform.position = transform.position + move;
+
+            if (transform.position.x > _maxXPosition) {
+                Vector3 pos = transform.position;
+                pos.x = _maxXPosition;
+                transform.position = pos;
+            }
+            else if (transform.position.x < _minXPosition) {
+                Vector3 pos = transform.position;
+                pos.x = _minXPosition;
+                transform.position = pos;
+            }
         }
-        if (Mathf.Abs(move.x) > Mathf.Abs(direction.x)) {
-            move.x = direction.x;
-        }
-
-
-        transform.position = transform.position + move;
-
-        if (transform.position.x > _maxXPosition) {
-            Vector3 pos = transform.position;
-            pos.x = _maxXPosition;
-            transform.position = pos;
-        }
-        else if (transform.position.x < _minXPosition) {
-            Vector3 pos = transform.position;
-            pos.x = _minXPosition;
-            transform.position = pos;
-        }
-
     }
 }
