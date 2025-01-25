@@ -183,7 +183,7 @@ MonoBehaviour:
   _popBubbleCollideWith:
     serializedVersion: 2
     m_Bits: 192
-  _forceOnPop: 0
+  _forceOnPop: 55
 --- !u!114 &5972851351712244291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,4 +196,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2792604d669e91f4fa856a01dbd4c867, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseDamage: 0
+  baseDamage: 55
