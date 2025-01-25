@@ -12,8 +12,7 @@ public class CameraFollow : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
-        if(_followObject != null){
-            
+        if(_followObject){
             Vector2 direction = _followObject.transform.position - transform.position;
             Vector3 move = direction.normalized * _followSpeed * Time.deltaTime;
 
@@ -23,6 +22,7 @@ public class CameraFollow : MonoBehaviour
             if (Mathf.Abs(move.x) > Mathf.Abs(direction.x)) {
                 move.x = direction.x;
             }
+
 
             transform.position = transform.position + move;
 
