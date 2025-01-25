@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3bdbc3cf71dd30a48bb645f224efd8f8
+guid: 96b243fea3c283e4387cf18cc4c3dcfe
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1518363075290452430
-    second: Weapon_0
+      213: 7840519610850682065
+    second: Level1Nmae_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Weapon_0
+      name: Level1Nmae_0
       rect:
         serializedVersion: 2
-        x: 78
-        y: 193
-        width: 777
-        height: 563
-      alignment: 9
-      pivot: {x: -0.10027291, y: 0.4916282}
+        x: 0
+        y: 0
+        width: 882
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ec1d1ce1c2f421510800000000000000
-      internalID: 1518363075290452430
+      spriteID: 1d42d339b0f1fcc60800000000000000
+      internalID: 7840519610850682065
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 70035954973a7ae4788805b562daf8d8
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Weapon_0: 1518363075290452430
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

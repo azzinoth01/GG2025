@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 444065494031310938}
   - component: {fileID: -2898495354443710223}
   - component: {fileID: 7365053909788993368}
+  - component: {fileID: 5656916177110115634}
   m_Layer: 7
   m_Name: BubblePlatform
   m_TagString: Untagged
@@ -79,7 +80,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: -5712959122012955994, guid: 9f141e8eb16eedf42af6d043e9e71014, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -141,7 +142,7 @@ Rigidbody2D:
   m_Mass: 5
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: -0.54
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -169,3 +170,19 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 704
   _forceOnPop: 1000
+--- !u!114 &5656916177110115634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676361124687917582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32e2f4aec8b54641af02fadeb59ac6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _startSpeed: 0.5
+  _maxSpeed: 3
+  _speedIncreasePerSeconds: 0.5
+  _moveDirection: {x: 0, y: 1}
