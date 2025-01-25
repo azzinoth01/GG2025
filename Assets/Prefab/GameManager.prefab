@@ -46,3 +46,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   deathScreen: {fileID: 0}
+  pauseScreen: {fileID: 0}
