@@ -1,0 +1,416 @@
+fileFormatVersion: 2
+guid: 51d74404e88526f4faaba4a2192845ed
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4657206873334446254
+    second: TowerOfBubblesLogo_0
+  - first:
+      213: -4627560026241231026
+    second: TowerOfBubblesLogo_1
+  - first:
+      213: 3427371174250363707
+    second: TowerOfBubblesLogo_2
+  - first:
+      213: 4388781576028623271
+    second: TowerOfBubblesLogo_3
+  - first:
+      213: -3170165571572925240
+    second: TowerOfBubblesLogo_4
+  - first:
+      213: 6878378886799892654
+    second: TowerOfBubblesLogo_5
+  - first:
+      213: 221646549256072447
+    second: TowerOfBubblesLogo_6
+  - first:
+      213: -8661322042108860735
+    second: TowerOfBubblesLogo_7
+  - first:
+      213: -7370221723822214202
+    second: TowerOfBubblesLogo_8
+  - first:
+      213: -5095059018685231361
+    second: TowerOfBubblesLogo_9
+  - first:
+      213: 33531067670377063
+    second: TowerOfBubblesLogo_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TowerOfBubblesLogo_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 327
+        width: 1426
+        height: 2204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea87b92f9f8b1a040800000000000000
+      internalID: 4657206873334446254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerOfBubblesLogo_1
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 548
+        width: 371
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e47181b8caa97cfb0800000000000000
+      internalID: -4627560026241231026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerOfBubblesLogo_2
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 525
+        width: 1309
+        height: 663
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3b3b9a8ce7709f20800000000000000
+      internalID: 3427371174250363707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerOfBubblesLogo_3
+      rect:
+        serializedVersion: 2
+        x: 3098
+        y: 1130
+        width: 127
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a117f3379518ec30800000000000000
+      internalID: 4388781576028623271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerOfBubblesLogo_4
+      rect:
+        serializedVersion: 2
+        x: 3234
+        y: 181
+        width: 776
+        height: 1390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ccf83b753f4104d0800000000000000
+      internalID: -3170165571572925240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerOfBubblesLogo_5
+      rect:
+        serializedVersion: 2
+        x: 4119
+        y: 37
+        width: 1119
+        height: 1703
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea021428729e47f50800000000000000
+      internalID: 6878378886799892654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerOfBubblesLogo_6
+      rect:
+        serializedVersion: 2
+        x: 5235
+        y: 613
+        width: 423
+        height: 542
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffc691abc52731300800000000000000
+      internalID: 221646549256072447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerOfBubblesLogo_7
+      rect:
+        serializedVersion: 2
+        x: 5596
+        y: 468
+        width: 737
+        height: 1003
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c627da0e7dccc780800000000000000
+      internalID: -8661322042108860735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerOfBubblesLogo_8
+      rect:
+        serializedVersion: 2
+        x: 6372
+        y: 361
+        width: 339
+        height: 1213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c3b5bb2466b7b990800000000000000
+      internalID: -7370221723822214202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerOfBubblesLogo_9
+      rect:
+        serializedVersion: 2
+        x: 3116
+        y: 626
+        width: 459
+        height: 473
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffecd9931d6ba49b0800000000000000
+      internalID: -5095059018685231361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerOfBubblesLogo_10
+      rect:
+        serializedVersion: 2
+        x: 6607
+        y: 581
+        width: 360
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 762be611450277000800000000000000
+      internalID: 33531067670377063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      TowerOfBubblesLogo_0: 4657206873334446254
+      TowerOfBubblesLogo_1: -4627560026241231026
+      TowerOfBubblesLogo_10: 33531067670377063
+      TowerOfBubblesLogo_2: 3427371174250363707
+      TowerOfBubblesLogo_3: 4388781576028623271
+      TowerOfBubblesLogo_4: -3170165571572925240
+      TowerOfBubblesLogo_5: 6878378886799892654
+      TowerOfBubblesLogo_6: 221646549256072447
+      TowerOfBubblesLogo_7: -8661322042108860735
+      TowerOfBubblesLogo_8: -7370221723822214202
+      TowerOfBubblesLogo_9: -5095059018685231361
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
