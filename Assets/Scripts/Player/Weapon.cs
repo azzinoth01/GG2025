@@ -8,10 +8,13 @@ public class Weapon : MonoBehaviour
 
     [SerializeField] private AudioClip _shootSound;
     [SerializeField] private float _shootVolume;
+    [SerializeField] private GameObject _projectileVFX;
     private Vector2 _aimDirection;
+
 
     public void ShootProjectile() {
         Projectile projectile = Instantiate(_projectilePrefab, _projectileSpawnPoint.transform.position, Quaternion.identity);
+        Instantiate(_projectileVFX, _projectileSpawnPoint.transform.position, transform.rotation);
         projectile.MoveDirection = _aimDirection;
 
         GameManager.Instance.AudioMixer.GetFloat("SFX", out float sfxVolume);

@@ -23,7 +23,7 @@ public class CameraShake : MonoBehaviour
 		{
 			camTransform = GetComponent(typeof(Transform)) as Transform;
 		}
-        
+
         if(Instance != null && Instance != this){
             Destroy(this);
         } else {
@@ -38,16 +38,18 @@ public class CameraShake : MonoBehaviour
 
 	void Update()
 	{
-		if (shakeDuration > 0)
-		{
-			camTransform.localPosition = originalPos + Random.insideUnitSphere * shakeAmount;
-			
-			shakeDuration -= Time.deltaTime * decreaseFactor;
-		}
-		else
-		{
-			shakeDuration = 0f;
-			camTransform.localPosition = originalPos;
-		}
+        if(!GameManager.Instance.IsGamePaused()){
+            if (shakeDuration > 0)
+            {
+                camTransform.localPosition = originalPos + Random.insideUnitSphere * shakeAmount;
+                
+                shakeDuration -= Time.deltaTime * decreaseFactor;
+            }
+            else
+            {
+                shakeDuration = 0f;
+                camTransform.localPosition = originalPos;
+            }
+        }
 	}
 }

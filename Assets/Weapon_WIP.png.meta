@@ -103,12 +103,12 @@ TextureImporter:
       name: Weapon_0
       rect:
         serializedVersion: 2
-        x: 76
+        x: 78
         y: 193
         width: 777
         height: 563
       alignment: 9
-      pivot: {x: 0.2, y: 0.5}
+      pivot: {x: -0.10027291, y: 0.4916282}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
