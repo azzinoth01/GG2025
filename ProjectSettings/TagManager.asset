@@ -16,8 +16,8 @@ TagManager:
   - Projectile
   - Obstacles
   - PlayerChaser
-  - 
-  - 
+  - Camera
+  - EnemyProjectile
   - 
   - 
   - 
