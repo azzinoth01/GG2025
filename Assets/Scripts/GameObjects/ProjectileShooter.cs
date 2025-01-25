@@ -28,7 +28,7 @@ public class ProjectileShooter : MonoBehaviour
             projectile.MoveDirection = _shootDirection;
 
             if (_shootSound != null) {
-                GameManager.Instance.AudioMixer.GetFloat("SFX", out float sfxVolume);
+                AudioManager.Instance.AudioMixer.GetFloat("SFX", out float sfxVolume);
                 float linearVolume = Mathf.Pow(10, sfxVolume / 20);
                 AudioSource.PlayClipAtPoint(_shootSound, transform.position, linearVolume * _shootVolume);
             }

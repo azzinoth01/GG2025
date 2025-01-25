@@ -12,7 +12,8 @@ public class HitCollisonSound : MonoBehaviour
 
         if ((mask & _collisionMask) != 0) {
             if (_hitSound != null) {
-                GameManager.Instance.AudioMixer.GetFloat("SFX", out float sfxVolume);
+
+                AudioManager.Instance.AudioMixer.GetFloat("SFX", out float sfxVolume);
                 float linearVolume = Mathf.Pow(10, sfxVolume / 20);
                 AudioSource.PlayClipAtPoint(_hitSound, transform.position, linearVolume * _hitVolume);
             }
