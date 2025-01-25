@@ -32,6 +32,7 @@ public class PlayerHealthManager : MonoBehaviour, IHealthInterface
         if(amount > 0 && currentHealthState != HealthState.Invulnerable){
             playerHealth -= amount;
             OnHealthChanged?.Invoke(this, new OnHealthChangedEventArgs{ health = playerHealth / playerHealthMax });
+            CameraShake.Instance.shakeDuration = 0.5f;
             currentHealthState = HealthState.Invulnerable;
 
             if(playerHealth <= 0){

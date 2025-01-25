@@ -21,7 +21,6 @@ public class GameManager : MonoBehaviour
         playerHealthManager = player.GetComponent<PlayerHealthManager>();
         playerHealthManager.OnPlayerDied += OnPlayerDied;
     }
-
     public void OnPlayerDied()
     {
         Destroy(player.gameObject);
