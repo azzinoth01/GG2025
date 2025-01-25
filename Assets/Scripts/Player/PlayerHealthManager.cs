@@ -8,7 +8,7 @@ public class PlayerHealthManager : MonoBehaviour, IHealthInterface
     private float playerHealth;
     private float invulnerableTime;
 
-    public event EventHandler<EventHandler> OnPlayerDied;
+    public event Action OnPlayerDied;
     public event EventHandler<OnHealthChangedEventArgs> OnHealthChanged;
     public class OnHealthChangedEventArgs : EventArgs {
         public float health;
@@ -23,7 +23,7 @@ public class PlayerHealthManager : MonoBehaviour, IHealthInterface
     private HealthState currentHealthState;
 
     public void KillActor(){
-        gameObject.SetActive(false);
+        OnPlayerDied?.Invoke();
     }
     public void UpdateHealth(float amount){
         if(amount > 0 && currentHealthState != HealthState.Invulnerable){

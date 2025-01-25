@@ -13,7 +13,7 @@ public class HealthCounter : MonoBehaviour
         healthFill.fillAmount = 1.0f;
 
         playerHealthManager = player.GetComponent<PlayerHealthManager>();
-        
+
         playerHealthManager.OnHealthChanged += OnHealthChanged;
         playerHealthManager.SetIlvunerable += OnSetIlvunerable;
     }
