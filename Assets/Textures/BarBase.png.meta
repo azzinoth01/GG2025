@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8e312d6fcc2edcc46bc308bda247f13a
+guid: 584a49dded5325e489a8ac0a70a55778
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 233230857315159566
-    second: switch_nor_0
+      213: 5158031094476457134
+    second: BarBase_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: switch_nor_0
+      name: BarBase_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1
-        width: 13
-        height: 13
+        x: 0
+        y: 0
+        width: 396
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e0e0ee0aa3a9c3300800000000000000
-      internalID: 233230857315159566
+      spriteID: ea440b6b3f1059740800000000000000
+      internalID: 5158031094476457134
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      switch_nor_0: 233230857315159566
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
