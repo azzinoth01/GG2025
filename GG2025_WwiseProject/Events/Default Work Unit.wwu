@@ -201,6 +201,15 @@
 						<Property Name="Color" Type="int16" Value="4"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{CB6F4323-8B7C-460C-AECF-7601244073C1}" ShortID="408749952">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MenuMusic" ID="{8B90D96F-CC27-4A50-9E85-AF9B388C6B57}" WorkUnitID="{292A57CC-7C0B-4C6C-8B3D-61EA145F7F4A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
 				</Event>
 			</ChildrenList>
 		</WorkUnit>

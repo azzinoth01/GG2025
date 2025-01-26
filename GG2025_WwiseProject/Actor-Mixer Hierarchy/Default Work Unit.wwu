@@ -1056,7 +1056,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8406A7ED-A393-4A60-AF54-F0D1DFA0B888}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="SFXVolume" ID="{758659D3-97D8-4597-8ADC-C5A25A49C064}" WorkUnitID="{410EB8FE-ED8E-42C8-8919-A829EDE7BC94}"/>
+							<ObjectRef Name="MusicVolume" ID="{A1D22C32-6813-4307-B965-CC9E4602634C}" WorkUnitID="{410EB8FE-ED8E-42C8-8919-A829EDE7BC94}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>

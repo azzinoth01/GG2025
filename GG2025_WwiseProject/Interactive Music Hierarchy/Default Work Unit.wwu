@@ -180,6 +180,11 @@
 													<MusicTrackSequence Name="" ID="{1C9FB35F-ED68-474C-8C85-8D10B25CC2E8}"/>
 												</Local>
 											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{FEC60B54-FAB4-4588-A6CA-77D3BB827663}"/>
+												</Local>
+											</Reference>
 										</ObjectList>
 									</ObjectLists>
 								</MusicTrack>
