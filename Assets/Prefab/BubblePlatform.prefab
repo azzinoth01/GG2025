@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -2898495354443710223}
   - component: {fileID: 7365053909788993368}
   - component: {fileID: 5656916177110115634}
+  - component: {fileID: 2481683153262795576}
   m_Layer: 7
   m_Name: BubblePlatform
   m_TagString: Untagged
@@ -169,7 +170,7 @@ MonoBehaviour:
   _popBubbleCollideWith:
     serializedVersion: 2
     m_Bits: 704
-  _forceOnPop: 2000
+  _forceOnPop: 9000
 --- !u!114 &5656916177110115634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,7 +183,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a32e2f4aec8b54641af02fadeb59ac6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _startSpeed: 0.5
+  _startSpeed: 0.75
   _maxSpeed: 3
-  _speedIncreasePerSeconds: 0.5
+  _speedIncreasePerSeconds: 0.75
   _moveDirection: {x: 0, y: 1}
+--- !u!114 &2481683153262795576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676361124687917582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ede55ec8e499ac45819397a43efebe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hitSound: {fileID: 8300000, guid: 5ff29bceab23dbe45b391505efa82567, type: 3}
+  _collisionMask:
+    serializedVersion: 2
+    m_Bits: 64
+  _hitVolume: 1

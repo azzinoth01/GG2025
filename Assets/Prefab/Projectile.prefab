@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2579740429416364517}
   - component: {fileID: 2160391189816394270}
   - component: {fileID: 5719317995152296402}
+  - component: {fileID: 8886192754325283645}
   m_Layer: 8
   m_Name: Projectile
   m_TagString: Untagged
@@ -31,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 2}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -103,7 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 843f2fb5ba83cdb4ba1cbd441b406f95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 12
 --- !u!58 &2579740429416364517
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -183,3 +184,22 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   _bublePlatformPrefab: {fileID: 676361124687917582, guid: 9d3e90ed69cf3484488f1b4fe9886280, type: 3}
+  _createBubblePlatformSound: {fileID: 8300000, guid: 5ff29bceab23dbe45b391505efa82567, type: 3}
+  _createBubblePlatformVolume: 1
+--- !u!114 &8886192754325283645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6637970115944636142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ede55ec8e499ac45819397a43efebe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hitSound: {fileID: 8300000, guid: 670710f496c059d4ba08b3fcab6dd7a6, type: 3}
+  _collisionMask:
+    serializedVersion: 2
+    m_Bits: 128
+  _hitVolume: 0.5

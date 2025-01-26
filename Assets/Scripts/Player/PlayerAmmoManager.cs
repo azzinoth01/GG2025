@@ -21,7 +21,7 @@ public class PlayerAmmoManager : MonoBehaviour
     }
 
     public bool CanShoot(){
-        return currentAmmo >= 0;
+        return currentAmmo >= depleteAmount;
     }
     public void DepleteAmmo(){
         currentAmmo -= depleteAmount;
@@ -33,7 +33,6 @@ public class PlayerAmmoManager : MonoBehaviour
         if(currentAmmo < maxAmmo){
             currentAmmo += toAdd;
             currentAmmo = Mathf.Clamp(currentAmmo, 0, maxAmmo);
-            Debug.Log("Ammo left: " + currentAmmo);
             OnAmmoChanged?.Invoke(this, new OnAmmoChangedEventArgs{ ammo = currentAmmo / maxAmmo });
             currentTime = 0.0f;
         }
@@ -45,5 +44,8 @@ public class PlayerAmmoManager : MonoBehaviour
                 AddAmmo(rechargeAmount);
             }
         }
+    }
+    public float GetAmmoAmount(){
+        return currentAmmo;
     }
 }
