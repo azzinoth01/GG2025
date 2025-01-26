@@ -24,11 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: d0f14c69ad817e4a9017165cc811d4a4
     GuidInternal: 
-<<<<<<< HEAD
-    m_lastTime: -8584637207361774951
-=======
     m_lastTime: -8584637168314406555
->>>>>>> MartinDevelop
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -42,11 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: feb80e418eedc8428919a829ede7bc94
     GuidInternal: 
-<<<<<<< HEAD
-    m_lastTime: -8584637124911127896
-=======
-    m_lastTime: -8584637066426559124
->>>>>>> MartinDevelop
+    m_lastTime: -8584637061771695290
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -62,7 +54,6 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
-<<<<<<< HEAD
     - name: MusicVolume
       guid: 322cd2a113680743b965cc9e4602634c
       id: 2346531308
@@ -97,8 +88,6 @@ MonoBehaviour:
         ObjectType: 2
         guid: d3598675d89797458adcc5a25a49c064
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFXVolume
-=======
->>>>>>> MartinDevelop
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -111,11 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 81553cbe86e9ff439e6dbcba0002739b
     GuidInternal: 
-<<<<<<< HEAD
-    m_lastTime: -8584637110310937050
-=======
-    m_lastTime: -8584637066426549144
->>>>>>> MartinDevelop
+    m_lastTime: -8584637061771685355
     List:
     - name: Main
       guid: 1cc32fd702a1454eb6a79cfc58b1bee0
@@ -143,11 +128,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: c2aae1553c40c549b01aedcd32ff1730
     GuidInternal: 
-<<<<<<< HEAD
-    m_lastTime: -8584637110311110414
-=======
-    m_lastTime: -8584637066444976876
->>>>>>> MartinDevelop
+    m_lastTime: -8584637061791623815
     List:
     - name: Ambiances
       guid: 608c88bf311aa64791a6b1edddc84117
@@ -164,13 +145,8 @@ MonoBehaviour:
         guid: 608c88bf311aa64791a6b1edddc84117
       Path: Events\Default Work Unit\Ambiances
       maxAttenuation: 0
-<<<<<<< HEAD
-      maxDuration: 0
-      minDuration: 0
-=======
       maxDuration: -1
       minDuration: -1
->>>>>>> MartinDevelop
     - name: BubbleGun
       guid: 94ba719b70c67d4585fc85313f671557
       id: 3165232487
@@ -186,13 +162,8 @@ MonoBehaviour:
         guid: 94ba719b70c67d4585fc85313f671557
       Path: Events\Default Work Unit\BubbleGun
       maxAttenuation: 0
-<<<<<<< HEAD
-      maxDuration: 2.9887118
-      minDuration: 1.5207213
-=======
       maxDuration: -1
       minDuration: -1
->>>>>>> MartinDevelop
     - name: BubblePop
       guid: 0a2de40f6d875a4faa904ef33cdd1ba1
       id: 3000457456
@@ -208,13 +179,8 @@ MonoBehaviour:
         guid: 0a2de40f6d875a4faa904ef33cdd1ba1
       Path: Events\Default Work Unit\BubblePop
       maxAttenuation: 0
-<<<<<<< HEAD
-      maxDuration: 0.20800586
-      minDuration: 0.08472629
-=======
       maxDuration: -1
       minDuration: -1
->>>>>>> MartinDevelop
     - name: BubbleUp
       guid: e96d0167e4f97d4b80f00faa17cd0f94
       id: 3840183904
@@ -229,15 +195,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: e96d0167e4f97d4b80f00faa17cd0f94
       Path: Events\Default Work Unit\BubbleUp
-<<<<<<< HEAD
-      maxAttenuation: 100
-      maxDuration: 1.1026598
-      minDuration: 0.5139132
-=======
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
->>>>>>> MartinDevelop
     - name: DamagePlayer
       guid: 2e3239a7d59c2b4fa5fdbb3c032ab865
       id: 4151113677
@@ -253,13 +213,8 @@ MonoBehaviour:
         guid: 2e3239a7d59c2b4fa5fdbb3c032ab865
       Path: Events\Default Work Unit\DamagePlayer
       maxAttenuation: 0
-<<<<<<< HEAD
-      maxDuration: 0.833049
-      minDuration: 0.27468964
-=======
       maxDuration: -1
       minDuration: -1
->>>>>>> MartinDevelop
     - name: Fail
       guid: 81c47a9081878e4087ea19ef964bd4fd
       id: 2596272617
@@ -275,13 +230,8 @@ MonoBehaviour:
         guid: 81c47a9081878e4087ea19ef964bd4fd
       Path: Events\Default Work Unit\Fail
       maxAttenuation: 0
-<<<<<<< HEAD
-      maxDuration: 4.9561
-      minDuration: 4.9561
-=======
       maxDuration: -1
       minDuration: -1
->>>>>>> MartinDevelop
     - name: Landing
       guid: 67ea165a826fc24ebd6d1c69ab50a34d
       id: 2548270042
@@ -297,9 +247,8 @@ MonoBehaviour:
         guid: 67ea165a826fc24ebd6d1c69ab50a34d
       Path: Events\Default Work Unit\Landing
       maxAttenuation: 0
-<<<<<<< HEAD
-      maxDuration: 0.25732118
-      minDuration: 0.13161463
+      maxDuration: -1
+      minDuration: -1
     - name: MenuMusic
       guid: b597fb964ee7f448b5f7dffc6e1b1f7f
       id: 679636833
@@ -315,12 +264,8 @@ MonoBehaviour:
         guid: b597fb964ee7f448b5f7dffc6e1b1f7f
       Path: Events\Default Work Unit\MenuMusic
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-=======
       maxDuration: -1
       minDuration: -1
->>>>>>> MartinDevelop
     - name: MetalDart
       guid: e286217b13c4c041856c512197daa025
       id: 2083819709
@@ -335,15 +280,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: e286217b13c4c041856c512197daa025
       Path: Events\Default Work Unit\MetalDart
-<<<<<<< HEAD
-      maxAttenuation: 100
-      maxDuration: 1.015626
-      minDuration: 0.5896547
-=======
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
->>>>>>> MartinDevelop
     - name: Music
       guid: e6347b95632fa144a62c3b6794bcf6d1
       id: 3991942870
@@ -359,13 +298,8 @@ MonoBehaviour:
         guid: e6347b95632fa144a62c3b6794bcf6d1
       Path: Events\Default Work Unit\Music
       maxAttenuation: 0
-<<<<<<< HEAD
-      maxDuration: 0
-      minDuration: 0
-=======
       maxDuration: -1
       minDuration: -1
->>>>>>> MartinDevelop
     - name: Success
       guid: 83dc932323a1c848ba783ac23b17c985
       id: 3625060726
@@ -381,13 +315,8 @@ MonoBehaviour:
         guid: 83dc932323a1c848ba783ac23b17c985
       Path: Events\Default Work Unit\Success
       maxAttenuation: 0
-<<<<<<< HEAD
-      maxDuration: 3.8286622
-      minDuration: 3.8286622
-=======
       maxDuration: -1
       minDuration: -1
->>>>>>> MartinDevelop
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -400,11 +329,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 025756f2ce8e9b4f8859d345b1b67f5d
     GuidInternal: 
-<<<<<<< HEAD
-    m_lastTime: -8584637124910911879
-=======
-    m_lastTime: -8584637066444967114
->>>>>>> MartinDevelop
+    m_lastTime: -8584637061791610458
     List:
     - name: Altitude
       guid: 0fb9fdd3afc26a4cbb7bccc7778d9402
@@ -434,7 +359,6 @@ MonoBehaviour:
         ObjectType: 13
         guid: 38f761f2c7250c4faf93d9e5c45e057d
       Path: Game Parameters\Default Work Unit\DangerDistance
-<<<<<<< HEAD
     - name: MusicVolume
       guid: 3573babe75168a49ab398cba64b4b14c
       id: 2346531308
@@ -463,8 +387,6 @@ MonoBehaviour:
         ObjectType: 13
         guid: f768961c0533014692a753b67c5e7072
       Path: Game Parameters\Default Work Unit\SFXVolume
-=======
->>>>>>> MartinDevelop
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -477,11 +399,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 4621d1e37e012a4caf633b63e6519547
     GuidInternal: 
-<<<<<<< HEAD
-    m_lastTime: -8584637207361805920
-=======
     m_lastTime: -8584637168314441858
->>>>>>> MartinDevelop
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -495,11 +413,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 5467bb8f865e444fbc25314e244e242d
     GuidInternal: 
-<<<<<<< HEAD
-    m_lastTime: -8584637207361805920
-=======
     m_lastTime: -8584637168314431882
->>>>>>> MartinDevelop
     List:
     - name: Ambiances
       guid: 9cacad6732f3c44a84c1dbe92c5a1ad0
@@ -563,17 +477,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 65747aed00d2a844b1347cd2c839bbab
     GuidInternal: 
-<<<<<<< HEAD
-    m_lastTime: -8584637207361795929
-    List: []
-  ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000001300000014000000150000001e0000001f0000002800000029000000990000009a000000b6000000b7000000b8000000
-=======
     m_lastTime: -8584637168314416729
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 
->>>>>>> MartinDevelop
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
