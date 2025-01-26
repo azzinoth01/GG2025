@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 13377c0c744d42545823a653d8f6f823
+guid: eb5582dcf90b669498918e34f2d3aa07
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5056138600423222399
-    second: BarGreen_0
+      213: -6394203479415606915
+    second: TopPlatform3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BarGreen_0
+      name: TopPlatform3_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 396
-        height: 60
+        width: 132
+        height: 124
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f7ced5db4430b2640800000000000000
-      internalID: 5056138600423222399
+      spriteID: d71bddb30d93347a0800000000000000
+      internalID: -6394203479415606915
       vertices: []
       indices: 
       edges: []
@@ -147,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      BarGreen_0: 5056138600423222399
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
