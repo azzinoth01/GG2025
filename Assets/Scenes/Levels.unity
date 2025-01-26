@@ -15052,6 +15052,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChaserCover
       objectReference: {fileID: 0}
+    - target: {fileID: 5457250167215285857, guid: a73f42f285b134743bf110b31dbf4048, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9168404944656874448, guid: a73f42f285b134743bf110b31dbf4048, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -20484,17 +20488,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8160410254605920423, guid: 32da9ea1113a0034d980bcbf5097a63b, type: 3}
-      propertyPath: m_SortingOrder
-      value: 3000
-      objectReference: {fileID: 0}
     - target: {fileID: 8280846201335768641, guid: 32da9ea1113a0034d980bcbf5097a63b, type: 3}
       propertyPath: m_Name
       value: Chaser
-      objectReference: {fileID: 0}
-    - target: {fileID: 8280846201335768641, guid: 32da9ea1113a0034d980bcbf5097a63b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
