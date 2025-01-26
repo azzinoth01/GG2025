@@ -9,7 +9,7 @@ public class PlayerHitVisual : MonoBehaviour
     private PlayerHealthManager playerHealthManager;
 
     private float flashDelay = 0f;
-    private float flashAmount = 3f;
+    private float flashAmount = 1.5f;
     private float flashCounter;
 
     void Start(){

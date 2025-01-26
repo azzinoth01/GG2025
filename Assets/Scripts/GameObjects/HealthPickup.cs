@@ -7,6 +7,7 @@ public class HealthPickup : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision){
         if(collision.gameObject.TryGetComponent(out PlayerHealthManager collisionObject)){
             collisionObject.AddHealth(healthToReplenish);
+            Instantiate(bubbleVFX, transform.position, Quaternion.identity);
         }  
         Destroy(gameObject);
     }
