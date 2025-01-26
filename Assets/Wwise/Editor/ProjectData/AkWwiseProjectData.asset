@@ -111,8 +111,8 @@ MonoBehaviour:
         guid: 608c88bf311aa64791a6b1edddc84117
       Path: Events\Default Work Unit\Ambiances
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: BubbleGun
       guid: 94ba719b70c67d4585fc85313f671557
       id: 3165232487
@@ -128,8 +128,8 @@ MonoBehaviour:
         guid: 94ba719b70c67d4585fc85313f671557
       Path: Events\Default Work Unit\BubbleGun
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 2.9887118
+      minDuration: 1.5207213
     - name: BubblePop
       guid: 0a2de40f6d875a4faa904ef33cdd1ba1
       id: 3000457456
@@ -145,8 +145,8 @@ MonoBehaviour:
         guid: 0a2de40f6d875a4faa904ef33cdd1ba1
       Path: Events\Default Work Unit\BubblePop
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.20800586
+      minDuration: 0.08472629
     - name: BubbleUp
       guid: e96d0167e4f97d4b80f00faa17cd0f94
       id: 3840183904
@@ -162,8 +162,8 @@ MonoBehaviour:
         guid: e96d0167e4f97d4b80f00faa17cd0f94
       Path: Events\Default Work Unit\BubbleUp
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.1026598
+      minDuration: 0.5139132
     - name: DamagePlayer
       guid: 2e3239a7d59c2b4fa5fdbb3c032ab865
       id: 4151113677
@@ -179,8 +179,8 @@ MonoBehaviour:
         guid: 2e3239a7d59c2b4fa5fdbb3c032ab865
       Path: Events\Default Work Unit\DamagePlayer
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.833049
+      minDuration: 0.27468964
     - name: Fail
       guid: 81c47a9081878e4087ea19ef964bd4fd
       id: 2596272617
@@ -196,8 +196,8 @@ MonoBehaviour:
         guid: 81c47a9081878e4087ea19ef964bd4fd
       Path: Events\Default Work Unit\Fail
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 4.9561
+      minDuration: 4.9561
     - name: Landing
       guid: 67ea165a826fc24ebd6d1c69ab50a34d
       id: 2548270042
@@ -213,8 +213,8 @@ MonoBehaviour:
         guid: 67ea165a826fc24ebd6d1c69ab50a34d
       Path: Events\Default Work Unit\Landing
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.25732118
+      minDuration: 0.13161463
     - name: MetalDart
       guid: e286217b13c4c041856c512197daa025
       id: 2083819709
@@ -230,8 +230,8 @@ MonoBehaviour:
         guid: e286217b13c4c041856c512197daa025
       Path: Events\Default Work Unit\MetalDart
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.015626
+      minDuration: 0.5896547
     - name: Music
       guid: e6347b95632fa144a62c3b6794bcf6d1
       id: 3991942870
@@ -247,8 +247,8 @@ MonoBehaviour:
         guid: e6347b95632fa144a62c3b6794bcf6d1
       Path: Events\Default Work Unit\Music
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Success
       guid: 83dc932323a1c848ba783ac23b17c985
       id: 3625060726
@@ -264,8 +264,8 @@ MonoBehaviour:
         guid: 83dc932323a1c848ba783ac23b17c985
       Path: Events\Default Work Unit\Success
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 3.8286622
+      minDuration: 3.8286622
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
