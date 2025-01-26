@@ -44,6 +44,8 @@ namespace AK
     {
         static const AkUniqueID ALTITUDE = 1141543723U;
         static const AkUniqueID DANGERDISTANCE = 3387517165U;
+        static const AkUniqueID MUSICVOLUME = 2346531308U;
+        static const AkUniqueID SFXVOLUME = 988953028U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
@@ -55,6 +57,8 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID MUSICVOLUME = 2346531308U;
+        static const AkUniqueID SFXVOLUME = 988953028U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES
