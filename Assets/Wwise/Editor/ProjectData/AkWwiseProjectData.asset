@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: c2aae1553c40c549b01aedcd32ff1730
     GuidInternal: 
-    m_lastTime: -8584637168809479298
+    m_lastTime: -8584637155998901359
     List:
     - name: Ambiances
       guid: 608c88bf311aa64791a6b1edddc84117
@@ -161,7 +161,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: e96d0167e4f97d4b80f00faa17cd0f94
       Path: Events\Default Work Unit\BubbleUp
-      maxAttenuation: 0
+      maxAttenuation: 100
       maxDuration: 1.1026598
       minDuration: 0.5139132
     - name: DamagePlayer
@@ -229,7 +229,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: e286217b13c4c041856c512197daa025
       Path: Events\Default Work Unit\MetalDart
-      maxAttenuation: 0
+      maxAttenuation: 100
       maxDuration: 1.015626
       minDuration: 0.5896547
     - name: Music

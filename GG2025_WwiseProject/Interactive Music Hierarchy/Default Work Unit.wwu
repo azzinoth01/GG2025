@@ -301,14 +301,14 @@
 																<SegmentShape>Exp2</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>2.55376</XPos>
+																<XPos>10</XPos>
 																<YPos>-200</YPos>
 																<Flags>0</Flags>
-																<SegmentShape>Exp2</SegmentShape>
+																<SegmentShape>Exp3</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>30.13966</XPos>
-																<YPos>0</YPos>
+																<XPos>25</XPos>
+																<YPos>0.03406</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
@@ -331,7 +331,7 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-5</Value>
+								<Value>-2</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -493,13 +493,13 @@
 																<Flags>5</Flags>
 															</Point>
 															<Point>
-																<XPos>4.77150537634409</XPos>
-																<YPos>0.0592695801987273</YPos>
+																<XPos>10</XPos>
+																<YPos>0.05927</YPos>
 																<Flags>0</Flags>
-																<SegmentShape>Exp2</SegmentShape>
+																<SegmentShape>Exp3</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>30.13966</XPos>
+																<XPos>25</XPos>
 																<YPos>-192</YPos>
 																<Flags>0</Flags>
 															</Point>

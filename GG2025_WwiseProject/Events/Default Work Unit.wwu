@@ -16,7 +16,7 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{0611829E-A76C-49EA-A7E7-8840C081725F}" ShortID="999138181">
+						<Action Name="" ID="{8061A8F3-F05C-4684-9547-19888AC493F0}" ShortID="614529282">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Danger_Loop" ID="{185E7F63-402C-4D87-9B79-AD5D7A271DAD}" WorkUnitID="{292A57CC-7C0B-4C6C-8B3D-61EA145F7F4A}"/>
@@ -138,6 +138,16 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{1AF08D0C-03CA-4C11-9D32-4C5FDB8B2B64}" ShortID="418277257">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Danger_Loop" ID="{185E7F63-402C-4D87-9B79-AD5D7A271DAD}" WorkUnitID="{292A57CC-7C0B-4C6C-8B3D-61EA145F7F4A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Fail" ID="{907AC481-8781-408E-87EA-19EF964BD4FD}">
@@ -153,23 +163,23 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{912754AE-D426-4BBD-BBCE-B1E4D1C066B4}" ShortID="708036329">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Explo_96bpm_Stems" ID="{31EEFEF1-068D-41E5-8D50-63A11A634C5B}" WorkUnitID="{292A57CC-7C0B-4C6C-8B3D-61EA145F7F4A}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{51ED07C1-DAA1-439D-B967-09ADCE47890F}" ShortID="110533305">
+						<Action Name="" ID="{E4D2B938-8390-459B-90B8-A6E3FF9F6785}" ShortID="945149130">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Danger_Loop" ID="{185E7F63-402C-4D87-9B79-AD5D7A271DAD}" WorkUnitID="{292A57CC-7C0B-4C6C-8B3D-61EA145F7F4A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{F478E844-3C18-43F7-87E8-52406A53BA16}" ShortID="1042628081">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Explo_96bpm_Stems" ID="{31EEFEF1-068D-41E5-8D50-63A11A634C5B}" WorkUnitID="{292A57CC-7C0B-4C6C-8B3D-61EA145F7F4A}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

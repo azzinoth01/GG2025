@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{D72FC31C-A102-4E45-B6A7-9CFC58B1BEE0}",
     "Language": "SFX",
-    "Hash": "{6609F337-218F-72F8-F592-A835A05D3F2D}",
+    "Hash": "{ECC2471F-CBA8-AF76-4A84-D4F6C7CB3F47}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -358,6 +358,7 @@
       "ObjectPath": "\\Events\\Default Work Unit\\BubbleUp",
       "GUID": "{67016DE9-F9E4-4B7D-80F0-0FAA17CD0F94}",
       "Color": "13",
+      "MaxAttenuation": "100",
       "DurationType": "OneShot",
       "DurationMin": "0.5139132",
       "DurationMax": "1.1026598",
@@ -451,6 +452,7 @@
       "ObjectPath": "\\Events\\Default Work Unit\\MetalDart",
       "GUID": "{7B2186E2-C413-41C0-856C-512197DAA025}",
       "Color": "13",
+      "MaxAttenuation": "100",
       "DurationType": "OneShot",
       "DurationMin": "0.5896547",
       "DurationMax": "1.015626",
@@ -523,6 +525,6 @@
     ]
    }
   ],
-  "FileHash": "{0ABBCD3A-C2EC-3EE2-BF4B-5B8AEE33AD38}"
+  "FileHash": "{90E7A38E-65C2-AA23-6058-FC02662F8326}"
  }
 }
