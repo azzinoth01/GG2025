@@ -11,7 +11,8 @@ public class ProjectileShooter : MonoBehaviour
 
     [SerializeField] private AudioClip _shootSound;
     [SerializeField] private float _shootVolume;
-
+    [SerializeField] private float _soundLength;
+    [SerializeField] private string _soundEvent;
 
     private void Start() {
 
@@ -27,10 +28,17 @@ public class ProjectileShooter : MonoBehaviour
             Projectile projectile = Instantiate(_projectilePrefab, _projectileSpawnPoint.transform.position, Quaternion.identity);
             projectile.MoveDirection = _shootDirection;
 
-            if (_shootSound != null) {
-                AudioManager.Instance.AudioMixer.GetFloat("SFX", out float sfxVolume);
-                float linearVolume = Mathf.Pow(10, sfxVolume / 20);
-                AudioSource.PlayClipAtPoint(_shootSound, transform.position, linearVolume * _shootVolume);
+            if (_soundEvent != "") {
+                //AudioManager.Instance.AudioMixer.GetFloat("SFX", out float sfxVolume);
+                //float linearVolume = Mathf.Pow(10, sfxVolume / 20);
+                //AudioSource.PlayClipAtPoint(_shootSound, transform.position, linearVolume * _shootVolume);
+
+
+                GameObject playSoundAtPosition = new GameObject();
+                playSoundAtPosition.transform.position = transform.position;
+                DestroyAfterTime destroyAfterTime = playSoundAtPosition.AddComponent<DestroyAfterTime>();
+                destroyAfterTime.DestroyTime = _soundLength;
+                AkSoundEngine.PostEvent(_soundEvent, playSoundAtPosition);
             }
         }
 

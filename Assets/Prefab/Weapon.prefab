@@ -49,6 +49,11 @@ MonoBehaviour:
   _aimPiviot: {fileID: 302849292442607885}
   _projectileSpawnPoint: {fileID: 1193182636465824667}
   _projectilePrefab: {fileID: 375941498103160998, guid: 874a76178d69ed246892ad9b7fc3cd48, type: 3}
+  _shootSound: {fileID: 0}
+  _shootVolume: 0
+  _projectileVFX: {fileID: 0}
+  _soundEvent: BubbleGun
+  _soundLength: 2.5
 --- !u!1 &1193182636465824667
 GameObject:
   m_ObjectHideFlags: 0

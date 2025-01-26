@@ -204,3 +204,5 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _hitVolume: 1
+  _soundEventName: BubblePop
+  _soundLength: 0.2

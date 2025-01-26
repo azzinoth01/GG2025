@@ -171,6 +171,8 @@ MonoBehaviour:
   _delayBetweenShootsInSeconds: 1
   _shootSound: {fileID: 8300000, guid: 670710f496c059d4ba08b3fcab6dd7a6, type: 3}
   _shootVolume: 1
+  _soundLength: 1
+  _soundEvent: MetalDart
 --- !u!114 &8445136702556011815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,6 +188,8 @@ MonoBehaviour:
   baseDamage: 0
   _dmgSound: {fileID: 0}
   _dmgVolume: 0
+  _soundEvent: 
+  _soundLength: 0
 --- !u!1 &2614910427865257552
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,3 +293,5 @@ MonoBehaviour:
   baseDamage: 55
   _dmgSound: {fileID: 8300000, guid: 5ff29bceab23dbe45b391505efa82567, type: 3}
   _dmgVolume: 0
+  _soundEvent: 
+  _soundLength: 0

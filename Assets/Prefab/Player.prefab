@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6657344141954821257}
   - component: {fileID: 6675982520661273872}
   - component: {fileID: 2763051558051070036}
+  - component: {fileID: 9097303209650154909}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -148,6 +149,25 @@ MonoBehaviour:
   depleteAmount: 100
   rechargeAmount: 5
   rechargeDelay: 0.1
+--- !u!114 &9097303209650154909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4730129009825023476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ede55ec8e499ac45819397a43efebe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hitSound: {fileID: 8300000, guid: 670710f496c059d4ba08b3fcab6dd7a6, type: 3}
+  _collisionMask:
+    serializedVersion: 2
+    m_Bits: 512
+  _hitVolume: 1
+  _soundEventName: DamagePlayer
+  _soundLength: 0.6
 --- !u!1001 &2917319152854264372
 PrefabInstance:
   m_ObjectHideFlags: 0
