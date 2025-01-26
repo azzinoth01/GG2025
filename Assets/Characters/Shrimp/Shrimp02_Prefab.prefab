@@ -10,7 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8653719598885068355, guid: b3108aea4138140608cdf7817067f887, type: 3}
       propertyPath: m_Name
-      value: Shrimp02
+      value: Shrimp02_Prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: -8252410445952316505, guid: b3108aea4138140608cdf7817067f887, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: b3108aea4138140608cdf7817067f887, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50,6 +54,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: b3108aea4138140608cdf7817067f887, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140903633898542589, guid: b3108aea4138140608cdf7817067f887, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5788523609010308678, guid: b3108aea4138140608cdf7817067f887, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
