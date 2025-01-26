@@ -15,6 +15,7 @@ public class TriggerGameStart : MonoBehaviour
         foreach (GameObject destroyObject in _destroyObjects) {
             Destroy(destroyObject);
         }
+        CameraShake.Instance.shakeDuration = 3.0f;
         _disolveObject.enabled = true;
     }
 }
