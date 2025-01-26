@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      JawsOfDeath_0: -3830906515202342619
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
