@@ -14,7 +14,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] private string _soundEvent;
     [SerializeField] private float _soundLength;
 
-
+    [SerializeField] private Animator _animator;
     public void ShootProjectile() {
         Projectile projectile = Instantiate(_projectilePrefab, _projectileSpawnPoint.transform.position, Quaternion.identity);
         Instantiate(_projectileVFX, _projectileSpawnPoint.transform.position, transform.rotation);
@@ -32,6 +32,7 @@ public class Weapon : MonoBehaviour
 
 
         }
+        _animator.SetTrigger("Shoot");
     }
 
     public void SetAim(Vector2 direction) {
