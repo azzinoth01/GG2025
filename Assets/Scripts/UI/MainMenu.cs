@@ -14,6 +14,7 @@ public class MainMenu : MonoBehaviour
     private string GAME_SCENE = "Levels";
 
     void Start(){
+        Time.timeScale = 1.0f;
         PlayButton.onClick.AddListener(StartGame);
         AboutButton.onClick.AddListener(ShowAbout);
         AboutBackButton.onClick.AddListener(ReturnToMenu);
