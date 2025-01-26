@@ -205,6 +205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseDamage: 50
+  _doNotDestroyOnCollision: 1
   _dmgSound: {fileID: 0}
   _dmgVolume: 0
 --- !u!114 &1938327814502721895
