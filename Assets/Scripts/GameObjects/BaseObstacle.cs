@@ -12,7 +12,7 @@ public class BaseObstacle : MonoBehaviour
 
             if (baseDamage > 0 && _dmgSound != null) {
                 if (_dmgSound != null) {
-                    GameManager.Instance.AudioMixer.GetFloat("SFX", out float sfxVolume);
+                    AudioManager.Instance.AudioMixer.GetFloat("SFX", out float sfxVolume);
                     float linearVolume = Mathf.Pow(10, sfxVolume / 20);
                     AudioSource.PlayClipAtPoint(_dmgSound, transform.position, linearVolume * _dmgVolume);
                 }

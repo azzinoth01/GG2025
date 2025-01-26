@@ -21,7 +21,7 @@ public class PlayerAmmoManager : MonoBehaviour
     }
 
     public bool CanShoot(){
-        return currentAmmo >= 0;
+        return currentAmmo >= depleteAmount;
     }
     public void DepleteAmmo(){
         currentAmmo -= depleteAmount;

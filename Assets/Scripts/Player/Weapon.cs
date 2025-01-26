@@ -16,13 +16,11 @@ public class Weapon : MonoBehaviour
         Projectile projectile = Instantiate(_projectilePrefab, _projectileSpawnPoint.transform.position, Quaternion.identity);
         Instantiate(_projectileVFX, _projectileSpawnPoint.transform.position, transform.rotation);
         projectile.MoveDirection = _aimDirection;
-
-        GameManager.Instance.AudioMixer.GetFloat("SFX", out float sfxVolume);
-
-        float linearVolume = Mathf.Pow(10, sfxVolume / 20);
-
-        AudioSource.PlayClipAtPoint(_shootSound, _projectileSpawnPoint.transform.position, linearVolume * _shootVolume);
-
+        if (_shootSound != null) {
+            AudioManager.Instance.AudioMixer.GetFloat("SFX", out float sfxVolume);
+            float linearVolume = Mathf.Pow(10, sfxVolume / 20);
+            AudioSource.PlayClipAtPoint(_shootSound, _projectileSpawnPoint.transform.position, linearVolume * _shootVolume);
+        }
     }
 
     public void SetAim(Vector2 direction) {

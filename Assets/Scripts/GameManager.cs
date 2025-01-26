@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Player player;
     [SerializeField] private GameObject deathScreen;
     [SerializeField] private GameObject pauseScreen;
+    [SerializeField] private GameObject winScreen;
     private PlayerHealthManager playerHealthManager;
     private bool isGamePaused;
     [SerializeField] private AudioMixer _audioMixer;
@@ -62,5 +64,9 @@ public class GameManager : MonoBehaviour
 
     public bool IsGamePaused() {
         return isGamePaused;
+    }
+
+    public void GameFinished(){
+        winScreen.SetActive(true);
     }
 }
