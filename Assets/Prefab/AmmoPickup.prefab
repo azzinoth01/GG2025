@@ -4926,7 +4926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43161f21b75caa142aac9e5bb0b99f08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoToReplenish: 250
+  ammoToReplenish: 600
   bubbleVFX: {fileID: 5941744877130963350, guid: 1a3c9a3873e844d498f148a0bd7d7211, type: 3}
 --- !u!1 &7610514605247004371
 GameObject:

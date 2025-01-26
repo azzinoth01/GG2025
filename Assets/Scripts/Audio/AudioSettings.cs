@@ -6,58 +6,71 @@ public class AudioSettings : MonoBehaviour
     [SerializeField] private Slider _sfxSlider;
     [SerializeField] private Slider _musicSlider;
 
+    private float _sfxValue;
+    private float _musicValue;
+
     public void SFXValueChanged(float value) {
-        float decibel = 0;
+        _sfxValue = value;
 
-        if (value <= 0f) {
-            decibel = -80;
-        }
-        else if (value < 0) {
-            decibel = 0;
-        }
-        else {
-            decibel = 20f * Mathf.Log10(value);
-        }
+        //float decibel = 0;
+
+        //if (value <= 0f) {
+        //    decibel = -80;
+        //}
+        //else if (value < 0) {
+        //    decibel = 0;
+        //}
+        //else {
+        //    decibel = 20f * Mathf.Log10(value);
+        //}
 
 
-        AudioManager.Instance.AudioMixer.SetFloat("SFX", decibel);
+        //AudioManager.Instance.AudioMixer.SetFloat("SFX", decibel);
+
+        AkSoundEngine.SetRTPCValue("SFXVolume", _sfxValue);
+
     }
 
     public void MusicValueChanged(float value) {
-        float decibel = 0;
+        _musicValue = value;
+        //float decibel = 0;
 
-        if (value <= 0f) {
-            decibel = -80;
-        }
-        else if (value < 0) {
-            decibel = 0;
-        }
-        else {
-            decibel = 20f * Mathf.Log10(value);
-        }
-        AudioManager.Instance.AudioMixer.SetFloat("Music", decibel);
+        //if (value <= 0f) {
+        //    decibel = -80;
+        //}
+        //else if (value < 0) {
+        //    decibel = 0;
+        //}
+        //else {
+        //    decibel = 20f * Mathf.Log10(value);
+        //}
+        //AudioManager.Instance.AudioMixer.SetFloat("Music", decibel);
+
+        AkSoundEngine.SetRTPCValue("MusicVolume", _musicValue);
     }
 
     public void SaveChanged() {
 
         SaveSettings saveSettings = new SaveSettings();
-        AudioManager.Instance.AudioMixer.GetFloat("SFX", out float sfx);
-        AudioManager.Instance.AudioMixer.GetFloat("Music", out float music);
-        saveSettings.SfxVolume = sfx;
-        saveSettings.MusicVolume = music;
+        //AudioManager.Instance.AudioMixer.GetFloat("SFX", out float sfx);
+        //AudioManager.Instance.AudioMixer.GetFloat("Music", out float music);
+        saveSettings.SfxVolume = _sfxValue;
+        saveSettings.MusicVolume = _musicValue;
         saveSettings.SaveFile();
     }
     public void LoadAudioSave() {
 
-        AudioManager.Instance.AudioMixer.GetFloat("SFX", out float decibel);
-        float scale = Mathf.Pow(10, decibel / 20f);
+        SaveSettings saveSettings = SaveSettings.LoadFile();
 
-        _sfxSlider.value = scale;
+        //AudioManager.Instance.AudioMixer.GetFloat("SFX", out float decibel);
+        //float scale = Mathf.Pow(10, decibel / 20f);
 
-        AudioManager.Instance.AudioMixer.GetFloat("Music", out decibel);
-        scale = Mathf.Pow(10, decibel / 20f);
+        _sfxSlider.value = saveSettings.SfxVolume;
 
-        _musicSlider.value = scale;
+        //AudioManager.Instance.AudioMixer.GetFloat("Music", out decibel);
+        //scale = Mathf.Pow(10, decibel / 20f);
+
+        _musicSlider.value = saveSettings.MusicVolume;
 
     }
 }

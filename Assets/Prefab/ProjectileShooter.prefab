@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 928878380562188487}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.07010466, w: 0.99753964}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -32,7 +32,7 @@ Transform:
   - {fileID: 624994082076383022}
   - {fileID: 4850534980754144424}
   m_Father: {fileID: 1230771961105831078}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 8.04}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1 &1103783221682766110
 GameObject:
   m_ObjectHideFlags: 0
@@ -58,7 +58,7 @@ Transform:
   m_GameObject: {fileID: 1103783221682766110}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalPosition: {x: 0.8, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -75,6 +75,7 @@ GameObject:
   - component: {fileID: 1230771961105831078}
   - component: {fileID: 849605776560315279}
   - component: {fileID: 8897704182405470562}
+  - component: {fileID: 8445136702556011815}
   m_Layer: 9
   m_Name: ProjectileShooter
   m_TagString: Untagged
@@ -92,7 +93,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.51, y: 3.66, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.62, y: 1.62, z: 1.62}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1464520422154112113}
@@ -142,7 +143,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: -9017859140913542548, guid: 56e9cc45eb96db241abd6889176b7bf8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -170,6 +171,26 @@ MonoBehaviour:
   _delayBetweenShootsInSeconds: 1
   _shootSound: {fileID: 8300000, guid: 670710f496c059d4ba08b3fcab6dd7a6, type: 3}
   _shootVolume: 1
+  _soundLength: 1
+  _soundEvent: MetalDart
+--- !u!114 &8445136702556011815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373512401761770840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2792604d669e91f4fa856a01dbd4c867, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseDamage: 0
+  _doNotDestroyOnCollision: 0
+  _dmgSound: {fileID: 0}
+  _dmgVolume: 0
+  _soundEvent: 
+  _soundLength: 0
 --- !u!1 &2614910427865257552
 GameObject:
   m_ObjectHideFlags: 0
@@ -180,6 +201,7 @@ GameObject:
   m_Component:
   - component: {fileID: 624994082076383022}
   - component: {fileID: 2046145421049378465}
+  - component: {fileID: 1675547564581419858}
   m_Layer: 9
   m_Name: Weapon
   m_TagString: Untagged
@@ -196,7 +218,7 @@ Transform:
   m_GameObject: {fileID: 2614910427865257552}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 0, z: 0}
+  m_LocalPosition: {x: 0.335, y: 0.017, z: 0}
   m_LocalScale: {x: 1, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -245,9 +267,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -15
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.14509805, g: 0.41176474, b: 0.45098042, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -257,3 +279,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1675547564581419858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2614910427865257552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2792604d669e91f4fa856a01dbd4c867, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseDamage: 55
+  _doNotDestroyOnCollision: 0
+  _dmgSound: {fileID: 8300000, guid: 5ff29bceab23dbe45b391505efa82567, type: 3}
+  _dmgVolume: 0
+  _soundEvent: 
+  _soundLength: 0

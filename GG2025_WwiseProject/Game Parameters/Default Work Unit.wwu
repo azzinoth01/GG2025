@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F2565702-8ECE-4F9B-8859-D345B1B67F5D}" SchemaVersion="123">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{F2565702-8ECE-4F9B-8859-D345B1B67F5D}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="DangerDistance" ID="{F261F738-25C7-4F0C-AF93-D9E5C45E057D}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Altitude" ID="{D3FDB90F-C2AF-4C6A-BB7B-CCC7778D9402}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1000"/>
+						<Property Name="Min" Type="Real64" Value="-2"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="MusicVolume" ID="{BEBA7335-1675-498A-AB39-8CBA64B4B14C}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="SFXVolume" ID="{1C9668F7-3305-4601-92A7-53B67C5E7072}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

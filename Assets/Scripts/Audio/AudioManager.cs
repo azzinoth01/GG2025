@@ -15,7 +15,7 @@ public class AudioManager : MonoBehaviour
                 GameObject init = Instantiate(prefab);
                 instance = init.GetComponent<AudioManager>();
                 DontDestroyOnLoad(instance);
-                instance.LoadAudioSettings();
+                //instance.LoadAudioSettings();
             }
 
             return instance;
