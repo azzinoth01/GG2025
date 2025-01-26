@@ -166,6 +166,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   _hitVolume: 1
+  _soundEventName: 'DamagePlayer '
+  _soundLength: 0.4
 --- !u!1001 &2917319152854264372
 PrefabInstance:
   m_ObjectHideFlags: 0
