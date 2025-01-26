@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HolyWaterContainerLol_0: 121583091077156255
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

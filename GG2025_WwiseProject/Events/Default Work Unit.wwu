@@ -128,6 +128,16 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{4562F36A-B6B7-4CED-8DC8-975C8FB74B94}" ShortID="518434188">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Explo_96bpm_Stems" ID="{31EEFEF1-068D-41E5-8D50-63A11A634C5B}" WorkUnitID="{292A57CC-7C0B-4C6C-8B3D-61EA145F7F4A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Fail" ID="{907AC481-8781-408E-87EA-19EF964BD4FD}">
@@ -140,6 +150,26 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="ToB_Asset_Defeat" ID="{0CDAD93B-E191-4A10-A363-649B6D07B93A}" WorkUnitID="{2AD9E3CE-E0F4-4F52-BA8D-96FA53682989}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{912754AE-D426-4BBD-BBCE-B1E4D1C066B4}" ShortID="708036329">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Explo_96bpm_Stems" ID="{31EEFEF1-068D-41E5-8D50-63A11A634C5B}" WorkUnitID="{292A57CC-7C0B-4C6C-8B3D-61EA145F7F4A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{51ED07C1-DAA1-439D-B967-09ADCE47890F}" ShortID="110533305">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Danger_Loop" ID="{185E7F63-402C-4D87-9B79-AD5D7A271DAD}" WorkUnitID="{292A57CC-7C0B-4C6C-8B3D-61EA145F7F4A}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

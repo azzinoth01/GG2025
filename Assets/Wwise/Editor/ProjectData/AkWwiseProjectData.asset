@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: d0f14c69ad817e4a9017165cc811d4a4
     GuidInternal: 
-    m_lastTime: -8584637609871813087
+    m_lastTime: -8584637207361774951
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: feb80e418eedc8428919a829ede7bc94
     GuidInternal: 
-    m_lastTime: -8584637609872067193
+    m_lastTime: -8584637207369935594
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 81553cbe86e9ff439e6dbcba0002739b
     GuidInternal: 
-    m_lastTime: -8584637544534664869
+    m_lastTime: -8584637207361815923
     List:
     - name: Main
       guid: 1cc32fd702a1454eb6a79cfc58b1bee0
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: c2aae1553c40c549b01aedcd32ff1730
     GuidInternal: 
-    m_lastTime: -8584637531382523217
+    m_lastTime: -8584637168809479298
     List:
     - name: Ambiances
       guid: 608c88bf311aa64791a6b1edddc84117
@@ -145,8 +145,8 @@ MonoBehaviour:
         guid: 0a2de40f6d875a4faa904ef33cdd1ba1
       Path: Events\Default Work Unit\BubblePop
       maxAttenuation: 0
-      maxDuration: 0.20800586
-      minDuration: 0.08472629
+      maxDuration: 0.1439165
+      minDuration: 0
     - name: BubbleUp
       guid: e96d0167e4f97d4b80f00faa17cd0f94
       id: 3840183904
@@ -278,7 +278,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 025756f2ce8e9b4f8859d345b1b67f5d
     GuidInternal: 
-    m_lastTime: -8584637532906116395
+    m_lastTime: -8584637173380893774
     List:
     - name: Altitude
       guid: 0fb9fdd3afc26a4cbb7bccc7778d9402
@@ -320,7 +320,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 4621d1e37e012a4caf633b63e6519547
     GuidInternal: 
-    m_lastTime: -8584637545827724656
+    m_lastTime: -8584637207361805920
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -334,7 +334,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 5467bb8f865e444fbc25314e244e242d
     GuidInternal: 
-    m_lastTime: -8584637531382299439
+    m_lastTime: -8584637207361805920
     List:
     - name: Ambiances
       guid: 9cacad6732f3c44a84c1dbe92c5a1ad0
@@ -398,7 +398,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 65747aed00d2a844b1347cd2c839bbab
     GuidInternal: 
-    m_lastTime: -8584637609871674231
+    m_lastTime: -8584637207361795929
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 0500000006000000070000001300000014000000150000002800000029000000b6000000b7000000b8000000

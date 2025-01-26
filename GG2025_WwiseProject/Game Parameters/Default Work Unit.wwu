@@ -11,7 +11,7 @@
 				<GameParameter Name="Altitude" ID="{D3FDB90F-C2AF-4C6A-BB7B-CCC7778D9402}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
-						<Property Name="Max" Type="Real64" Value="220"/>
+						<Property Name="Max" Type="Real64" Value="1000"/>
 						<Property Name="Min" Type="Real64" Value="-2"/>
 					</PropertyList>
 				</GameParameter>
