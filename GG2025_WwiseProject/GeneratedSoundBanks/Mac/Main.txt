@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	679636833	MenuMusic			\Default Work Unit\MenuMusic	
 	1404066300	Ambiances			\Default Work Unit\Ambiances	
 	2083819709	MetalDart			\Default Work Unit\MetalDart	
 	2548270042	Landing			\Default Work Unit\Landing	

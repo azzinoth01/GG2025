@@ -11,6 +11,7 @@
 						<ObjectRef Name="BubbleGun" ID="{9B71BA94-C670-457D-85FC-85313F671557}" WorkUnitID="{55E1AAC2-403C-49C5-B01A-EDCD32FF1730}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Ambiances" ID="{BF888C60-1A31-47A6-91A6-B1EDDDC84117}" WorkUnitID="{55E1AAC2-403C-49C5-B01A-EDCD32FF1730}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Success" ID="{2393DC83-A123-48C8-BA78-3AC23B17C985}" WorkUnitID="{55E1AAC2-403C-49C5-B01A-EDCD32FF1730}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="MenuMusic" ID="{96FB97B5-E74E-48F4-B5F7-DFFC6E1B1F7F}" WorkUnitID="{55E1AAC2-403C-49C5-B01A-EDCD32FF1730}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="BubbleUp" ID="{67016DE9-F9E4-4B7D-80F0-0FAA17CD0F94}" WorkUnitID="{55E1AAC2-403C-49C5-B01A-EDCD32FF1730}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Landing" ID="{5A16EA67-6F82-4EC2-BD6D-1C69AB50A34D}" WorkUnitID="{55E1AAC2-403C-49C5-B01A-EDCD32FF1730}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="DamagePlayer" ID="{A739322E-9CD5-4F2B-A5FD-BB3C032AB865}" WorkUnitID="{55E1AAC2-403C-49C5-B01A-EDCD32FF1730}" Origin="Manual" Filter="7"/>

@@ -196,6 +196,12 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="MenuMusic" ID="{96FB97B5-E74E-48F4-B5F7-DFFC6E1B1F7F}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
