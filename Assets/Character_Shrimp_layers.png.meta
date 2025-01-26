@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 78239e533513d3642a9e3a4dcffe0874
+guid: 1a0109f1b2ad4144f8d4c970fa385591
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7629440198364185545
-    second: Column1_0
+      213: 2630676879866900413
+    second: Character_Shrimp_layers_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Column1_0
+      name: Character_Shrimp_layers_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 121
-        height: 561
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 482
+        y: 734
+        width: 838
+        height: 722
+      alignment: 9
+      pivot: {x: 0.9491565, y: 0.5161469}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9c3459a107731e960800000000000000
-      internalID: 7629440198364185545
+      spriteID: dbfac4f2faa028420800000000000000
+      internalID: 2630676879866900413
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 571ef9651c6f52141bcede59cf948363
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Column1_0: 7629440198364185545
+      Character_Shrimp_layers_0: 2630676879866900413
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
