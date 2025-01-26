@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: d0f14c69ad817e4a9017165cc811d4a4
     GuidInternal: 
-    m_lastTime: -8584637188369240479
+    m_lastTime: -8584637168314406555
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: feb80e418eedc8428919a829ede7bc94
     GuidInternal: 
-    m_lastTime: -8584637188378397912
+    m_lastTime: -8584637168325503471
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 81553cbe86e9ff439e6dbcba0002739b
     GuidInternal: 
-    m_lastTime: -8584637188369280378
+    m_lastTime: -8584637168314451806
     List:
     - name: Main
       guid: 1cc32fd702a1454eb6a79cfc58b1bee0
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: c2aae1553c40c549b01aedcd32ff1730
     GuidInternal: 
-    m_lastTime: -8584637188395944850
+    m_lastTime: -8584637168346966436
     List:
     - name: Ambiances
       guid: 608c88bf311aa64791a6b1edddc84117
@@ -278,7 +278,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 025756f2ce8e9b4f8859d345b1b67f5d
     GuidInternal: 
-    m_lastTime: -8584637188395909848
+    m_lastTime: -8584637168346911399
     List:
     - name: Altitude
       guid: 0fb9fdd3afc26a4cbb7bccc7778d9402
@@ -320,7 +320,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 4621d1e37e012a4caf633b63e6519547
     GuidInternal: 
-    m_lastTime: -8584637188369270406
+    m_lastTime: -8584637168314441858
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -334,7 +334,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 5467bb8f865e444fbc25314e244e242d
     GuidInternal: 
-    m_lastTime: -8584637188369260436
+    m_lastTime: -8584637168314431882
     List:
     - name: Ambiances
       guid: 9cacad6732f3c44a84c1dbe92c5a1ad0
@@ -398,7 +398,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 65747aed00d2a844b1347cd2c839bbab
     GuidInternal: 
-    m_lastTime: -8584637188369250449
+    m_lastTime: -8584637168314416729
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 0500000006000000070000001300000014000000150000002800000029000000b6000000b7000000b8000000
