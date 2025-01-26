@@ -51,4 +51,9 @@ public class SaveSettings
 
         return saveSettings;
     }
+
+    public SaveSettings() {
+        _sfxVolume = 1;
+        _musicVolume = 1;
+    }
 }
