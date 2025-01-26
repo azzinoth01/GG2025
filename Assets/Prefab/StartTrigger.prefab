@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4479741170539089424}
   - component: {fileID: 5333460303354648300}
   - component: {fileID: 3617460669049882967}
+  - component: {fileID: 6883727879310384561}
   m_Layer: 9
   m_Name: StartTrigger
   m_TagString: Untagged
@@ -143,3 +144,20 @@ MonoBehaviour:
   - {fileID: 3107837144461561846}
   - {fileID: 0}
   _disolveObject: {fileID: 0}
+--- !u!111 &6883727879310384561
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3107837144461561846}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 7400000, guid: af74e8bad4e733a4f88d89689fee71ec, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: af74e8bad4e733a4f88d89689fee71ec, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0

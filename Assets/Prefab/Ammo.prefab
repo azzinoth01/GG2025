@@ -200,5 +200,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29505ee81a0cd6747b8022527bb0d8be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoBackground: {fileID: 3391681521602989892}
+  ammoFill: {fileID: 0}
   player: {fileID: 0}
