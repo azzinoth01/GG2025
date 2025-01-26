@@ -18,11 +18,21 @@ public class Player : MonoBehaviour, PlayerAction.IPlayerInputActions
     private PlayerAction _inputControl;
     private PlayerAmmoManager _ammoControl;
 
+    [SerializeField] private Animator _animator;
+
     public void OnMove(InputAction.CallbackContext context) {
         _moveDirection = context.ReadValue<Vector2>();
+
+        if (_moveDirection != Vector2.zero) {
+            _animator.SetBool("isWalking", true);
+        }
+        else {
+            _animator.SetBool("isWalking", false);
+        }
+
     }
     public void OnAim(InputAction.CallbackContext context) {
-        if(!GameManager.Instance.IsGamePaused()){
+        if (!GameManager.Instance.IsGamePaused()) {
             Vector2 mousePosition = context.ReadValue<Vector2>();
             mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
             Vector2 playerPosition = transform.position;
@@ -43,8 +53,8 @@ public class Player : MonoBehaviour, PlayerAction.IPlayerInputActions
         }
     }
 
-    public void OnPause(InputAction.CallbackContext context){
-        if (context.started){
+    public void OnPause(InputAction.CallbackContext context) {
+        if (context.started) {
             GameManager.Instance.ToggleGamePaused();
         }
     }
@@ -62,9 +72,11 @@ public class Player : MonoBehaviour, PlayerAction.IPlayerInputActions
 
     // Update is called once per frame
     void Update() {
-        if(!GameManager.Instance.IsGamePaused()){
+        if (!GameManager.Instance.IsGamePaused()) {
             _body.AddForce(_moveForce * _moveDirection * Time.deltaTime);
             _body.linearVelocity = _body.linearVelocity.normalized * Mathf.Clamp(_body.linearVelocity.magnitude, 0, _maxMoveSpeed);
+
+
         }
     }
 
