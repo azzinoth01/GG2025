@@ -26,6 +26,9 @@ public class AudioSettings : MonoBehaviour
 
 
         //AudioManager.Instance.AudioMixer.SetFloat("SFX", decibel);
+
+        AkSoundEngine.SetRTPCValue("SFXVolume", _sfxValue);
+
     }
 
     public void MusicValueChanged(float value) {
@@ -42,6 +45,8 @@ public class AudioSettings : MonoBehaviour
         //    decibel = 20f * Mathf.Log10(value);
         //}
         //AudioManager.Instance.AudioMixer.SetFloat("Music", decibel);
+
+        AkSoundEngine.SetRTPCValue("MusicVolume", _musicValue);
     }
 
     public void SaveChanged() {
