@@ -140,6 +140,8 @@ MonoBehaviour:
   baseDamage: 99999
   _dmgSound: {fileID: 0}
   _dmgVolume: 0
+  _soundEvent: 
+  _soundLength: 0
 --- !u!212 &2952920949479277979
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -313,3 +315,5 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _hitVolume: 1
+  _soundEventName: Fail
+  _soundLength: 5

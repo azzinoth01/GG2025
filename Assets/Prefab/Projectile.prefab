@@ -185,7 +185,9 @@ MonoBehaviour:
     m_Bits: 512
   _bublePlatformPrefab: {fileID: 676361124687917582, guid: 9d3e90ed69cf3484488f1b4fe9886280, type: 3}
   _createBubblePlatformSound: {fileID: 8300000, guid: 5ff29bceab23dbe45b391505efa82567, type: 3}
-  _createBubblePlatformVolume: 1
+  _createBubblePlatfstring: 0
+  _soundEvent: BubbleUp
+  _soundLength: 1
 --- !u!114 &8886192754325283645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,3 +205,5 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   _hitVolume: 0.5
+  _soundEventName: 
+  _soundLength: 0
