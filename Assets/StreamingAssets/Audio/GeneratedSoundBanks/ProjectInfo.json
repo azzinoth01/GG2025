@@ -1,0 +1,43 @@
+{
+ "ProjectInfo": {
+  "Project": {
+   "Name": "GG2025_WwiseProject",
+   "GUID": "{1461F5CD-C3B2-411B-94B4-6736BF30F859}",
+   "Generator": "2024.1.1.8691"
+  },
+  "CacheRoot": "../../../../GG2025_WwiseProject/.cache",
+  "Platforms": [
+   {
+    "Name": "Android",
+    "GUID": "{1CA6653E-F7F0-499C-9970-FB85EBC0E8CC}",
+    "BasePlatform": "Android",
+    "BasePlatformGUID": "{A2D401DE-B8B6-4FEB-8142-137C34D507CA}",
+    "Path": "../../../../GG2025_WwiseProject/GeneratedSoundBanks/Android"
+   },
+   {
+    "Name": "Mac",
+    "GUID": "{235F06E4-19AC-488A-8FA8-09854CC7A472}",
+    "BasePlatform": "Mac",
+    "BasePlatformGUID": "{9C6217D5-DD11-4795-87C1-6CE02853C540}",
+    "Path": "../../../../GG2025_WwiseProject/GeneratedSoundBanks/Mac"
+   },
+   {
+    "Name": "Windows",
+    "GUID": "{5AD02474-0929-436A-9E94-829037F7243C}",
+    "BasePlatform": "Windows",
+    "BasePlatformGUID": "{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}",
+    "Path": "../../../../GG2025_WwiseProject/GeneratedSoundBanks/Windows"
+   }
+  ],
+  "Languages": [
+   {
+    "Name": "English(US)",
+    "Id": "684519430",
+    "GUID": "{0C26B33A-5797-4D36-8936-1E6BF3D7B387}",
+    "Default": "true",
+    "UseAsStandIn": "true"
+   }
+  ],
+  "FileHash": "{490C2285-E6DF-5F0B-6632-EDA29A458A6B}"
+ }
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{BE3C5581-E986-43FF-9E6D-BCBA0002739B}" SchemaVersion="123">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{BE3C5581-E986-43FF-9E6D-BCBA0002739B}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{D72FC31C-A102-4E45-B6A7-9CFC58B1BEE0}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Fail" ID="{907AC481-8781-408E-87EA-19EF964BD4FD}" WorkUnitID="{55E1AAC2-403C-49C5-B01A-EDCD32FF1730}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="MetalDart" ID="{7B2186E2-C413-41C0-856C-512197DAA025}" WorkUnitID="{55E1AAC2-403C-49C5-B01A-EDCD32FF1730}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music" ID="{957B34E6-2F63-44A1-A62C-3B6794BCF6D1}" WorkUnitID="{55E1AAC2-403C-49C5-B01A-EDCD32FF1730}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="BubbleGun" ID="{9B71BA94-C670-457D-85FC-85313F671557}" WorkUnitID="{55E1AAC2-403C-49C5-B01A-EDCD32FF1730}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Ambiances" ID="{BF888C60-1A31-47A6-91A6-B1EDDDC84117}" WorkUnitID="{55E1AAC2-403C-49C5-B01A-EDCD32FF1730}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Success" ID="{2393DC83-A123-48C8-BA78-3AC23B17C985}" WorkUnitID="{55E1AAC2-403C-49C5-B01A-EDCD32FF1730}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="BubbleUp" ID="{67016DE9-F9E4-4B7D-80F0-0FAA17CD0F94}" WorkUnitID="{55E1AAC2-403C-49C5-B01A-EDCD32FF1730}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Landing" ID="{5A16EA67-6F82-4EC2-BD6D-1C69AB50A34D}" WorkUnitID="{55E1AAC2-403C-49C5-B01A-EDCD32FF1730}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="DamagePlayer" ID="{A739322E-9CD5-4F2B-A5FD-BB3C032AB865}" WorkUnitID="{55E1AAC2-403C-49C5-B01A-EDCD32FF1730}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="BubblePop" ID="{0FE42D0A-876D-4F5A-AA90-4EF33CDD1BA1}" WorkUnitID="{55E1AAC2-403C-49C5-B01A-EDCD32FF1730}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

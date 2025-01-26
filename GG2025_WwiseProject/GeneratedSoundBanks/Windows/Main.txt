@@ -1,0 +1,52 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1404066300	Ambiances			\Default Work Unit\Ambiances	
+	2083819709	MetalDart			\Default Work Unit\MetalDart	
+	2548270042	Landing			\Default Work Unit\Landing	
+	2596272617	Fail			\Default Work Unit\Fail	
+	3000457456	BubblePop			\Default Work Unit\BubblePop	
+	3165232487	BubbleGun			\Default Work Unit\BubbleGun	
+	3625060726	Success			\Default Work Unit\Success	
+	3840183904	BubbleUp			\Default Work Unit\BubbleUp	
+	3991942870	Music			\Default Work Unit\Music	
+	4151113677	DamagePlayer			\Default Work Unit\DamagePlayer	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1141543723	Altitude			\Default Work Unit\Altitude	
+	3387517165	DangerDistance			\Default Work Unit\DangerDistance	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	50563584	ToB_Asset_Landing_3	C:\Users\gress\Desktop\Game Engine Sessions\Unity\GG2025\GG2025\GG2025_WwiseProject\.cache\4E\{4E396E67-FD62-5D9C-CB56-9AFFB32F48E4}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Landing\ToB_Asset_Landing_3		16192
+	64423200	ToB_Asset_BubbleUp_2	C:\Users\gress\Desktop\Game Engine Sessions\Unity\GG2025\GG2025\GG2025_WwiseProject\.cache\14\{14F7E263-5B83-EFD4-F7D4-A5EEE7E4AF7A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bubble Up\ToB_Asset_BubbleUp_2		71238
+	97265376	ToB_Asset_Landing_1	C:\Users\gress\Desktop\Game Engine Sessions\Unity\GG2025\GG2025\GG2025_WwiseProject\.cache\7C\{7C37ED00-BB69-1B67-BE12-5D4F003ABA54}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Landing\ToB_Asset_Landing_1		16570
+	119387796	ToB_Stem__Core_Loop_96bpm	C:\Users\gress\Desktop\Game Engine Sessions\Unity\GG2025\GG2025\GG2025_WwiseProject\.cache\47\{47F058FD-9DF2-139A-5186-6167B09C8875}.wem		\Interactive Music Hierarchy\Default Work Unit\Explo_96bpm_Stems\Explo_96bpm_Stems_All\ToB_Stem__Core_Loop_96bpm		16317100
+	168504832	ToB_Asset_Abovewater_Amb_Loop	C:\Users\gress\Desktop\Game Engine Sessions\Unity\GG2025\GG2025\GG2025_WwiseProject\.cache\D5\{D53D9131-3083-8DCC-B58C-49F5433169E2}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\ToB_Asset_Abovewater_Amb_Loop		7497096
+	185483046	ToB_Asset_Landing_2	C:\Users\gress\Desktop\Game Engine Sessions\Unity\GG2025\GG2025\GG2025_WwiseProject\.cache\D8\{D8016E47-FBA7-7DB8-86F4-B7EAA7550A02}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Landing\ToB_Asset_Landing_2		16564
+	218862797	ToB_Asset_BubbleUp_5	C:\Users\gress\Desktop\Game Engine Sessions\Unity\GG2025\GG2025\GG2025_WwiseProject\.cache\8B\{8B8C5FDB-C407-9A84-FD9D-6C489296261D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bubble Up\ToB_Asset_BubbleUp_5		68918
+	220091231	ToB_Asset_BubbleUp_4	C:\Users\gress\Desktop\Game Engine Sessions\Unity\GG2025\GG2025\GG2025_WwiseProject\.cache\9B\{9B883B7C-5838-27C4-F104-957FC506C01C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bubble Up\ToB_Asset_BubbleUp_4		50974
+	228705240	ToB_Asset_BubbleGun_4	C:\Users\gress\Desktop\Game Engine Sessions\Unity\GG2025\GG2025\GG2025_WwiseProject\.cache\35\{35C53DC0-AD53-655D-79EC-4BA40EFF43A7}.wem		\Actor-Mixer Hierarchy\Default Work Unit\BubbleGun\ToB_Asset_BubbleGun_4		174038
+	345949793	ToB_Asset_Landing_5	C:\Users\gress\Desktop\Game Engine Sessions\Unity\GG2025\GG2025\GG2025_WwiseProject\.cache\ED\{EDFE7DA3-B46B-BDEB-000C-F0FDAF3B529E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Landing\ToB_Asset_Landing_5		13126
+	451497165	ToB_Asset_PopBubble_3	C:\Users\gress\Desktop\Game Engine Sessions\Unity\GG2025\GG2025\GG2025_WwiseProject\.cache\84\{84236D65-70CE-9E72-A441-AEEED79A8BB5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bubble Pop\ToB_Asset_PopBubble_3		10466
+	471720473	ToB_Asset_BubbleUp_1	C:\Users\gress\Desktop\Game Engine Sessions\Unity\GG2025\GG2025\GG2025_WwiseProject\.cache\4C\{4C3FA73D-BB46-6184-2190-B3751BE9A951}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bubble Up\ToB_Asset_BubbleUp_1		86740
+	483700642	ToB_Asset_BubbleGun_1	C:\Users\gress\Desktop\Game Engine Sessions\Unity\GG2025\GG2025\GG2025_WwiseProject\.cache\B3\{B3A872A5-EB25-3D98-210B-115BB254C98D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\BubbleGun\ToB_Asset_BubbleGun_1		221760
+	491418553	ToB_Asset_MetalDart_2	C:\Users\gress\Desktop\Game Engine Sessions\Unity\GG2025\GG2025\GG2025_WwiseProject\.cache\DF\{DFFCDC3B-D72E-219D-7A89-F63A1BADE90F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Metal Dart\ToB_Asset_MetalDart_2		65244
+	514966965	ToB_Asset_DamagePlayer_4	C:\Users\gress\Desktop\Game Engine Sessions\Unity\GG2025\GG2025\GG2025_WwiseProject\.cache\A1\{A15E8800-DC72-5165-5005-BAACA914ED6B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Damage Player\ToB_Asset_DamagePlayer_4		49656
+	519721334	ToB_Asset_PopBubble_4	C:\Users\gress\Desktop\Game Engine Sessions\Unity\GG2025\GG2025\GG2025_WwiseProject\.cache\C1\{C1BEDA1F-F80D-5F4E-F4AD-195CFDF69339}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bubble Pop\ToB_Asset_PopBubble_4		15084
+	540872558	ToB_Asset_BubbleUp_3	C:\Users\gress\Desktop\Game Engine Sessions\Unity\GG2025\GG2025\GG2025_WwiseProject\.cache\46\{461BFC9E-2ED8-8ADE-BEDC-948FAA0F03A9}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bubble Up\ToB_Asset_BubbleUp_3		63274
+	558015139	ToB_Asset_MetalDart_4	C:\Users\gress\Desktop\Game Engine Sessions\Unity\GG2025\GG2025\GG2025_WwiseProject\.cache\78\{78AD3C67-5862-E20A-FE74-355D1344AB64}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Metal Dart\ToB_Asset_MetalDart_4		75422
+	612276924	ToB_Asset_Underwater_Amb_Loop	C:\Users\gress\Desktop\Game Engine Sessions\Unity\GG2025\GG2025\GG2025_WwiseProject\.cache\46\{46A8DFAB-99E7-13B2-D0D4-4B5A935D72A6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\ToB_Asset_Underwater_Amb_Loop		9261096
+	616022429	ToB_Asset_DamagePlayer_2	C:\Users\gress\Desktop\Game Engine Sessions\Unity\GG2025\GG2025\GG2025_WwiseProject\.cache\AE\{AEBA43D7-7A81-249A-02CB-6C3AA47FE110}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Damage Player\ToB_Asset_DamagePlayer_2		55140
+	664216220	ToB_Asset_Landing_4	C:\Users\gress\Desktop\Game Engine Sessions\Unity\GG2025\GG2025\GG2025_WwiseProject\.cache\03\{03F1642F-145B-4919-8A8A-C774A59EA77E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Landing\ToB_Asset_Landing_4		17496
+	665855740	ToB_Asset_MetalDart_1	C:\Users\gress\Desktop\Game Engine Sessions\Unity\GG2025\GG2025\GG2025_WwiseProject\.cache\13\{13E4A66E-8BC5-2440-DCE8-E391A7E3801B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Metal Dart\ToB_Asset_MetalDart_1		69050
+	678078372	ToB_Asset_PopBubble_2	C:\Users\gress\Desktop\Game Engine Sessions\Unity\GG2025\GG2025\GG2025_WwiseProject\.cache\C0\{C07C193D-DA9A-BDDF-EF6F-848AA11BC4FC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bubble Pop\ToB_Asset_PopBubble_2		8624
+	686755704	ToB_Asset_Victory	C:\Users\gress\Desktop\Game Engine Sessions\Unity\GG2025\GG2025\GG2025_WwiseProject\.cache\D5\{D5A477AE-1669-FFED-7B55-1D83385B243D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\ToB_Asset_Victory		675472
+	738708068	ToB_Asset_DamagePlayer_3	C:\Users\gress\Desktop\Game Engine Sessions\Unity\GG2025\GG2025\GG2025_WwiseProject\.cache\28\{28B97FF7-172D-3B39-1E0F-B04CB24B93B1}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Damage Player\ToB_Asset_DamagePlayer_3		53832
+	760379943	ToB_Asset_PopBubble_1	C:\Users\gress\Desktop\Game Engine Sessions\Unity\GG2025\GG2025\GG2025_WwiseProject\.cache\A1\{A14E9A9B-858F-450D-0719-022D8622AA4C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bubble Pop\ToB_Asset_PopBubble_1		8484
+	833321092	ToB_Asset_BubbleGun_3	C:\Users\gress\Desktop\Game Engine Sessions\Unity\GG2025\GG2025\GG2025_WwiseProject\.cache\B2\{B20825FC-EB9F-1D20-C819-546D7ACAAC8D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\BubbleGun\ToB_Asset_BubbleGun_3		220596
+	902080683	ToB_Asset_Defeat	C:\Users\gress\Desktop\Game Engine Sessions\Unity\GG2025\GG2025\GG2025_WwiseProject\.cache\9F\{9FA6D9B1-DFAD-C278-67B1-8D0BC6A716D9}.wem		\Actor-Mixer Hierarchy\Default Work Unit\ToB_Asset_Defeat		874352
+	917801235	ToB_Stem__Drums_Loop_96bpm	C:\Users\gress\Desktop\Game Engine Sessions\Unity\GG2025\GG2025\GG2025_WwiseProject\.cache\63\{636EAB57-9498-7D20-F36B-2793D98C8FC9}.wem		\Interactive Music Hierarchy\Default Work Unit\Explo_96bpm_Stems\Explo_96bpm_Stems_All\ToB_Stem__Drums_Loop_96bpm		16317100
+	960554327	ToB_Asset_DamagePlayer_1	C:\Users\gress\Desktop\Game Engine Sessions\Unity\GG2025\GG2025\GG2025_WwiseProject\.cache\13\{13983DAA-F1B4-B8A3-D0C5-4337450EFCC0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Damage Player\ToB_Asset_DamagePlayer_1		32436
+	963681564	ToB_Asset_BubbleGun_2	C:\Users\gress\Desktop\Game Engine Sessions\Unity\GG2025\GG2025\GG2025_WwiseProject\.cache\27\{279DA1B5-F731-E53E-6C2E-B2F9EE05CCCE}.wem		\Actor-Mixer Hierarchy\Default Work Unit\BubbleGun\ToB_Asset_BubbleGun_2		220596
+	966879938	ToB_Stem__SoloInst_Loop_96bpm	C:\Users\gress\Desktop\Game Engine Sessions\Unity\GG2025\GG2025\GG2025_WwiseProject\.cache\CE\{CED140A0-9A56-AEF9-19A6-0F6C2F4A3E1C}.wem		\Interactive Music Hierarchy\Default Work Unit\Explo_96bpm_Stems\Explo_96bpm_Stems_All\ToB_Stem__SoloInst_Loop_96bpm		16317100
+	976588053	ToB_Stem_Stress_Loop	C:\Users\gress\Desktop\Game Engine Sessions\Unity\GG2025\GG2025\GG2025_WwiseProject\.cache\23\{23CE5D6C-2A99-FF9C-989D-6B025AFD4E13}.wem		\Interactive Music Hierarchy\Default Work Unit\Danger_Loop\ToB_Stem_Stress_Loop\ToB_Stem_Stress_Loop		3087096
+	1013458271	ToB_Asset_MetalDart_3	C:\Users\gress\Desktop\Game Engine Sessions\Unity\GG2025\GG2025\GG2025_WwiseProject\.cache\57\{57AAA33F-F4B0-7ADE-EB3C-0F102F23B4FE}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Metal Dart\ToB_Asset_MetalDart_3		67004
+

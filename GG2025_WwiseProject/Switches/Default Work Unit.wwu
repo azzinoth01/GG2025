@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8FBB6754-5E86-4F44-BC25-314E244E242D}" SchemaVersion="123">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{8FBB6754-5E86-4F44-BC25-314E244E242D}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Ambiances" ID="{67ADAC9C-F332-4AC4-84C1-DBE92C5A1AD0}">
+					<ChildrenList>
+						<Switch Name="Underwater" ID="{003633A8-EFAA-4B69-9A5B-973C5B116DAD}"/>
+						<Switch Name="AboveWater" ID="{49FDA586-ECEC-497D-B5DE-515BEBF38B3D}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

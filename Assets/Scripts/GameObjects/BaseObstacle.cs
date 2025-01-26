@@ -3,6 +3,7 @@ using UnityEngine;
 public class BaseObstacle : MonoBehaviour
 {
     [SerializeField] private float baseDamage;
+    [SerializeField] private bool _doNotDestroyOnCollision;
     [SerializeField] private AudioClip _dmgSound;
     [SerializeField] private float _dmgVolume;
 
@@ -15,9 +16,13 @@ public class BaseObstacle : MonoBehaviour
                     AudioManager.Instance.AudioMixer.GetFloat("SFX", out float sfxVolume);
                     float linearVolume = Mathf.Pow(10, sfxVolume / 20);
                     AudioSource.PlayClipAtPoint(_dmgSound, transform.position, linearVolume * _dmgVolume);
+
                 }
             }
         }
-        Destroy(gameObject);
+        if (_doNotDestroyOnCollision == false) {
+            Destroy(gameObject);
+        }
+
     }
 }
