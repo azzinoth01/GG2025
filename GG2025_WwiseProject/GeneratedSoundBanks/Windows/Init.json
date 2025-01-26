@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{5F68FBFD-A93F-0050-A0B1-8F56EE5883E7}",
+    "Hash": "{9B3A8C69-4B9A-B1BB-1CDB-52B27DD2864B}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -36,6 +36,18 @@
     },
     "Busses": [
      {
+      "Id": "988953028",
+      "Name": "SFXVolume",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFXVolume",
+      "GUID": "{758659D3-97D8-4597-8ADC-C5A25A49C064}"
+     },
+     {
+      "Id": "2346531308",
+      "Name": "MusicVolume",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\MusicVolume",
+      "GUID": "{A1D22C32-6813-4307-B965-CC9E4602634C}"
+     },
+     {
       "Id": "3803692087",
       "Name": "Master Audio Bus",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
@@ -44,10 +56,22 @@
     ],
     "GameParameters": [
      {
+      "Id": "988953028",
+      "Name": "SFXVolume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\SFXVolume",
+      "GUID": "{1C9668F7-3305-4601-92A7-53B67C5E7072}"
+     },
+     {
       "Id": "1141543723",
       "Name": "Altitude",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\Altitude",
       "GUID": "{D3FDB90F-C2AF-4C6A-BB7B-CCC7778D9402}"
+     },
+     {
+      "Id": "2346531308",
+      "Name": "MusicVolume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\MusicVolume",
+      "GUID": "{BEBA7335-1675-498A-AB39-8CBA64B4B14C}"
      },
      {
       "Id": "3387517165",
@@ -80,6 +104,6 @@
     ]
    }
   ],
-  "FileHash": "{217AD16D-EAB2-A800-E34A-3327141E206E}"
+  "FileHash": "{59FE4A63-4897-1646-732B-F9180FA68AFB}"
  }
 }
