@@ -371,7 +371,7 @@ Transform:
   m_GameObject: {fileID: 2826143490452346289}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0899977, y: -0.13000026, z: 0}
+  m_LocalPosition: {x: 0.1899997, y: -0.1500018, z: 0}
   m_LocalScale: {x: 10.54, y: 2.81, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -422,7 +422,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -39
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.57861626, g: 0.36448267, b: 0, a: 1}
+  m_Color: {r: 0.42767292, g: 0.28223467, b: 0.036311787, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -506,8 +506,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4278798189
+  m_fontColor: {r: 0.427451, g: 0.2784314, b: 0.03529412, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1361,7 +1361,7 @@ Transform:
   m_GameObject: {fileID: 8742418790053961449}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.6344754, w: 0.7729431}
-  m_LocalPosition: {x: -0.47, y: -2.93, z: 0}
+  m_LocalPosition: {x: -0.37, y: -2.95, z: 0}
   m_LocalScale: {x: 3.86, y: 0.93, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1412,7 +1412,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -39
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.57861626, g: 0.36448267, b: 0, a: 1}
+  m_Color: {r: 0.42767292, g: 0.28223467, b: 0.036311787, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
