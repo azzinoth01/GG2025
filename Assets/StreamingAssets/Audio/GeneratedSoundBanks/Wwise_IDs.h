@@ -20,6 +20,7 @@ namespace AK
         static const AkUniqueID DAMAGEPLAYER = 4151113677U;
         static const AkUniqueID FAIL = 2596272617U;
         static const AkUniqueID LANDING = 2548270042U;
+        static const AkUniqueID MENUMUSIC = 679636833U;
         static const AkUniqueID METALDART = 2083819709U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID SUCCESS = 3625060726U;

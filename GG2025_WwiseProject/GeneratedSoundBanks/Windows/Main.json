@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{D72FC31C-A102-4E45-B6A7-9CFC58B1BEE0}",
     "Language": "SFX",
-    "Hash": "{42C7A071-5999-598C-98C0-3ADDFC924F53}",
+    "Hash": "{4E3D64DF-5FF2-6937-A144-4EB4E0A517C9}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -447,6 +447,19 @@
       ]
      },
      {
+      "Id": "679636833",
+      "Name": "MenuMusic",
+      "ObjectPath": "\\Events\\Default Work Unit\\MenuMusic",
+      "GUID": "{96FB97B5-E74E-48F4-B5F7-DFFC6E1B1F7F}",
+      "Color": "4",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "917801235"
+       }
+      ]
+     },
+     {
       "Id": "2083819709",
       "Name": "MetalDart",
       "ObjectPath": "\\Events\\Default Work Unit\\MetalDart",
@@ -525,6 +538,6 @@
     ]
    }
   ],
-  "FileHash": "{63FE9A60-B447-FEFD-9F3A-6D0CB5DC04B5}"
+  "FileHash": "{391F5C4F-B52A-C110-CC37-428A732DF5D9}"
  }
 }

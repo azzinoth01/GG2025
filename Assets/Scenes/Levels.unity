@@ -11931,6 +11931,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9070840236759853095, guid: a3f2ba6de1fb202409ff7371e27b85b3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 246.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18095,6 +18099,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: -876546973899608171, guid: fa955104d9e27b74cb9ac5e4fd85e8ee, type: 3}
+    - target: {fileID: 1157388511912850681, guid: cea739e9fc0c6ac42a4d14b661cdc858, type: 3}
+      propertyPath: _soundEventName
+      value: DamagePlayer
+      objectReference: {fileID: 0}
     - target: {fileID: 1259697449608702840, guid: cea739e9fc0c6ac42a4d14b661cdc858, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
