@@ -116,9 +116,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ac33ea4aeab4344b8ddb63c7986bc99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveForce: 5500
-  _maxMoveSpeed: 15
-  _shootForce: 7500
+  _moveForce: 4500
+  _maxMoveSpeed: 25
+  _shootForce: 4500
   _weapon: {fileID: 740112308241004067}
   _animator: {fileID: 1530664936910509882}
 --- !u!114 &6675982520661273872
