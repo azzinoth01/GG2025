@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7723652632321733531, guid: c27586b6bdf2544429adaac2cc26abea, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.84654665, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -208,6 +208,8 @@ MonoBehaviour:
   _doNotDestroyOnCollision: 1
   _dmgSound: {fileID: 0}
   _dmgVolume: 0
+  _soundEvent: 
+  _soundLength: 0
 --- !u!114 &1938327814502721895
 MonoBehaviour:
   m_ObjectHideFlags: 0
