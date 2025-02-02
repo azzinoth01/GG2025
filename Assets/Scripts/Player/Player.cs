@@ -18,8 +18,18 @@ public class Player : MonoBehaviour, PlayerAction.IPlayerInputActions
     private PlayerAction _inputControl;
     private PlayerAmmoManager _ammoControl;
 
+    [SerializeField] private Animator _animator;
+
     public void OnMove(InputAction.CallbackContext context) {
         _moveDirection = context.ReadValue<Vector2>();
+
+        if (_moveDirection != Vector2.zero) {
+            _animator.SetBool("isWalking", true);
+        }
+        else {
+            _animator.SetBool("isWalking", false);
+        }
+
     }
     public void OnAim(InputAction.CallbackContext context) {
         if (!GameManager.Instance.IsGamePaused()) {
@@ -87,6 +97,8 @@ public class Player : MonoBehaviour, PlayerAction.IPlayerInputActions
         if (!GameManager.Instance.IsGamePaused()) {
             _body.AddForce(_moveForce * _moveDirection * Time.deltaTime);
             _body.linearVelocity = _body.linearVelocity.normalized * Mathf.Clamp(_body.linearVelocity.magnitude, 0, _maxMoveSpeed);
+
+
         }
     }
 
