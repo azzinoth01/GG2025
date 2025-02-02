@@ -22,7 +22,7 @@ public class Player : MonoBehaviour, PlayerAction.IPlayerInputActions
         _moveDirection = context.ReadValue<Vector2>();
     }
     public void OnAim(InputAction.CallbackContext context) {
-        if(!GameManager.Instance.IsGamePaused()){
+        if (!GameManager.Instance.IsGamePaused()) {
             Vector2 mousePosition = context.ReadValue<Vector2>();
             mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
             Vector2 playerPosition = transform.position;
@@ -43,9 +43,31 @@ public class Player : MonoBehaviour, PlayerAction.IPlayerInputActions
         }
     }
 
-    public void OnPause(InputAction.CallbackContext context){
-        if (context.started){
+    public void OnPause(InputAction.CallbackContext context) {
+        if (context.started) {
             GameManager.Instance.ToggleGamePaused();
+        }
+    }
+
+    public void Aim(Vector2 aim) {
+        _aimDirection = aim.normalized;
+
+        _weapon.SetAim(_aimDirection);
+    }
+    public void Moving(Vector2 move) {
+        _moveDirection = move;
+    }
+    public void Pause() {
+        GameManager.Instance.ToggleGamePaused();
+    }
+    public void Shoot() {
+        if (!GameManager.Instance.IsGamePaused()) {
+            if (_ammoControl.CanShoot()) {
+                Debug.Log(_ammoControl.GetAmmoAmount());
+                _body.AddForce(-1 * _shootForce * _aimDirection);
+                _ammoControl.DepleteAmmo();
+                _weapon.ShootProjectile();
+            }
         }
     }
 
@@ -62,7 +84,7 @@ public class Player : MonoBehaviour, PlayerAction.IPlayerInputActions
 
     // Update is called once per frame
     void Update() {
-        if(!GameManager.Instance.IsGamePaused()){
+        if (!GameManager.Instance.IsGamePaused()) {
             _body.AddForce(_moveForce * _moveDirection * Time.deltaTime);
             _body.linearVelocity = _body.linearVelocity.normalized * Mathf.Clamp(_body.linearVelocity.magnitude, 0, _maxMoveSpeed);
         }
