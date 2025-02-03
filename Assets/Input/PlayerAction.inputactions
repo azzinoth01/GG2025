@@ -2,7 +2,7 @@
     "name": "PlayerAction",
     "maps": [
         {
-            "name": "PlayerInput",
+            "name": "MouseAndKeyboardInput",
             "id": "31d9f363-b08a-4f92-97e6-f1bd0056fdf1",
             "actions": [
                 {
@@ -156,7 +156,7 @@
                 {
                     "name": "",
                     "id": "835d3ec9-8660-46be-89eb-1855cccd00a6",
-                    "path": "<Gamepad>/leftStick/x",
+                    "path": "<Gamepad>/leftStick",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",

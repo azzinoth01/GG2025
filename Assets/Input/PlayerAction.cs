@@ -24,7 +24,7 @@ public partial class @PlayerAction: IInputActionCollection2, IDisposable
     ""name"": ""PlayerAction"",
     ""maps"": [
         {
-            ""name"": ""PlayerInput"",
+            ""name"": ""MouseAndKeyboardInput"",
             ""id"": ""31d9f363-b08a-4f92-97e6-f1bd0056fdf1"",
             ""actions"": [
                 {
@@ -178,7 +178,7 @@ public partial class @PlayerAction: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""835d3ec9-8660-46be-89eb-1855cccd00a6"",
-                    ""path"": ""<Gamepad>/leftStick/x"",
+                    ""path"": ""<Gamepad>/leftStick"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Gamepad"",
@@ -263,12 +263,12 @@ public partial class @PlayerAction: IInputActionCollection2, IDisposable
         }
     ]
 }");
-        // PlayerInput
-        m_PlayerInput = asset.FindActionMap("PlayerInput", throwIfNotFound: true);
-        m_PlayerInput_Move = m_PlayerInput.FindAction("Move", throwIfNotFound: true);
-        m_PlayerInput_Aim = m_PlayerInput.FindAction("Aim", throwIfNotFound: true);
-        m_PlayerInput_Shoot = m_PlayerInput.FindAction("Shoot", throwIfNotFound: true);
-        m_PlayerInput_Pause = m_PlayerInput.FindAction("Pause", throwIfNotFound: true);
+        // MouseAndKeyboardInput
+        m_MouseAndKeyboardInput = asset.FindActionMap("MouseAndKeyboardInput", throwIfNotFound: true);
+        m_MouseAndKeyboardInput_Move = m_MouseAndKeyboardInput.FindAction("Move", throwIfNotFound: true);
+        m_MouseAndKeyboardInput_Aim = m_MouseAndKeyboardInput.FindAction("Aim", throwIfNotFound: true);
+        m_MouseAndKeyboardInput_Shoot = m_MouseAndKeyboardInput.FindAction("Shoot", throwIfNotFound: true);
+        m_MouseAndKeyboardInput_Pause = m_MouseAndKeyboardInput.FindAction("Pause", throwIfNotFound: true);
         // GamepadInput
         m_GamepadInput = asset.FindActionMap("GamepadInput", throwIfNotFound: true);
         m_GamepadInput_Move = m_GamepadInput.FindAction("Move", throwIfNotFound: true);
@@ -279,7 +279,7 @@ public partial class @PlayerAction: IInputActionCollection2, IDisposable
 
     ~@PlayerAction()
     {
-        UnityEngine.Debug.Assert(!m_PlayerInput.enabled, "This will cause a leak and performance issues, PlayerAction.PlayerInput.Disable() has not been called.");
+        UnityEngine.Debug.Assert(!m_MouseAndKeyboardInput.enabled, "This will cause a leak and performance issues, PlayerAction.MouseAndKeyboardInput.Disable() has not been called.");
         UnityEngine.Debug.Assert(!m_GamepadInput.enabled, "This will cause a leak and performance issues, PlayerAction.GamepadInput.Disable() has not been called.");
     }
 
@@ -339,30 +339,30 @@ public partial class @PlayerAction: IInputActionCollection2, IDisposable
         return asset.FindBinding(bindingMask, out action);
     }
 
-    // PlayerInput
-    private readonly InputActionMap m_PlayerInput;
-    private List<IPlayerInputActions> m_PlayerInputActionsCallbackInterfaces = new List<IPlayerInputActions>();
-    private readonly InputAction m_PlayerInput_Move;
-    private readonly InputAction m_PlayerInput_Aim;
-    private readonly InputAction m_PlayerInput_Shoot;
-    private readonly InputAction m_PlayerInput_Pause;
-    public struct PlayerInputActions
+    // MouseAndKeyboardInput
+    private readonly InputActionMap m_MouseAndKeyboardInput;
+    private List<IMouseAndKeyboardInputActions> m_MouseAndKeyboardInputActionsCallbackInterfaces = new List<IMouseAndKeyboardInputActions>();
+    private readonly InputAction m_MouseAndKeyboardInput_Move;
+    private readonly InputAction m_MouseAndKeyboardInput_Aim;
+    private readonly InputAction m_MouseAndKeyboardInput_Shoot;
+    private readonly InputAction m_MouseAndKeyboardInput_Pause;
+    public struct MouseAndKeyboardInputActions
     {
         private @PlayerAction m_Wrapper;
-        public PlayerInputActions(@PlayerAction wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Move => m_Wrapper.m_PlayerInput_Move;
-        public InputAction @Aim => m_Wrapper.m_PlayerInput_Aim;
-        public InputAction @Shoot => m_Wrapper.m_PlayerInput_Shoot;
-        public InputAction @Pause => m_Wrapper.m_PlayerInput_Pause;
-        public InputActionMap Get() { return m_Wrapper.m_PlayerInput; }
+        public MouseAndKeyboardInputActions(@PlayerAction wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Move => m_Wrapper.m_MouseAndKeyboardInput_Move;
+        public InputAction @Aim => m_Wrapper.m_MouseAndKeyboardInput_Aim;
+        public InputAction @Shoot => m_Wrapper.m_MouseAndKeyboardInput_Shoot;
+        public InputAction @Pause => m_Wrapper.m_MouseAndKeyboardInput_Pause;
+        public InputActionMap Get() { return m_Wrapper.m_MouseAndKeyboardInput; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(PlayerInputActions set) { return set.Get(); }
-        public void AddCallbacks(IPlayerInputActions instance)
+        public static implicit operator InputActionMap(MouseAndKeyboardInputActions set) { return set.Get(); }
+        public void AddCallbacks(IMouseAndKeyboardInputActions instance)
         {
-            if (instance == null || m_Wrapper.m_PlayerInputActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_PlayerInputActionsCallbackInterfaces.Add(instance);
+            if (instance == null || m_Wrapper.m_MouseAndKeyboardInputActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_MouseAndKeyboardInputActionsCallbackInterfaces.Add(instance);
             @Move.started += instance.OnMove;
             @Move.performed += instance.OnMove;
             @Move.canceled += instance.OnMove;
@@ -377,7 +377,7 @@ public partial class @PlayerAction: IInputActionCollection2, IDisposable
             @Pause.canceled += instance.OnPause;
         }
 
-        private void UnregisterCallbacks(IPlayerInputActions instance)
+        private void UnregisterCallbacks(IMouseAndKeyboardInputActions instance)
         {
             @Move.started -= instance.OnMove;
             @Move.performed -= instance.OnMove;
@@ -393,21 +393,21 @@ public partial class @PlayerAction: IInputActionCollection2, IDisposable
             @Pause.canceled -= instance.OnPause;
         }
 
-        public void RemoveCallbacks(IPlayerInputActions instance)
+        public void RemoveCallbacks(IMouseAndKeyboardInputActions instance)
         {
-            if (m_Wrapper.m_PlayerInputActionsCallbackInterfaces.Remove(instance))
+            if (m_Wrapper.m_MouseAndKeyboardInputActionsCallbackInterfaces.Remove(instance))
                 UnregisterCallbacks(instance);
         }
 
-        public void SetCallbacks(IPlayerInputActions instance)
+        public void SetCallbacks(IMouseAndKeyboardInputActions instance)
         {
-            foreach (var item in m_Wrapper.m_PlayerInputActionsCallbackInterfaces)
+            foreach (var item in m_Wrapper.m_MouseAndKeyboardInputActionsCallbackInterfaces)
                 UnregisterCallbacks(item);
-            m_Wrapper.m_PlayerInputActionsCallbackInterfaces.Clear();
+            m_Wrapper.m_MouseAndKeyboardInputActionsCallbackInterfaces.Clear();
             AddCallbacks(instance);
         }
     }
-    public PlayerInputActions @PlayerInput => new PlayerInputActions(this);
+    public MouseAndKeyboardInputActions @MouseAndKeyboardInput => new MouseAndKeyboardInputActions(this);
 
     // GamepadInput
     private readonly InputActionMap m_GamepadInput;
@@ -496,7 +496,7 @@ public partial class @PlayerAction: IInputActionCollection2, IDisposable
             return asset.controlSchemes[m_MouseAndKeyboardSchemeIndex];
         }
     }
-    public interface IPlayerInputActions
+    public interface IMouseAndKeyboardInputActions
     {
         void OnMove(InputAction.CallbackContext context);
         void OnAim(InputAction.CallbackContext context);
