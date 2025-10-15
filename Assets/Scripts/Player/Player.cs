@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
     public void Shoot() {
         if(!GameManager.Instance.IsGamePaused()) {
             if(_ammoControl.CanShoot()) {
-                Debug.Log(_ammoControl.GetAmmoAmount());
+                //    Debug.Log(_ammoControl.GetAmmoAmount());
                 _body.AddForce(-1 * _shootForce * _aimDirection);
                 _ammoControl.DepleteAmmo();
                 _weapon.ShootProjectile();
